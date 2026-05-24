@@ -1,4 +1,4 @@
-# 4. Roadmap: 5 Phasen
+# 04. Roadmap: 5 Phasen
 
 Wir befinden uns noch in der „Ära der menschlichen Bedienung" — Hardware und Software sind darauf angewiesen, dass Menschen über Oberflächen interagieren, um Geräte zu steuern und Funktionen auszuführen.
 

@@ -1,4 +1,4 @@
-# 4. Hoja de ruta: 5 fases
+# 04. Hoja de ruta: 5 fases
 
 Todavía estamos en la "Era de operación humana" — el hardware y software dependen de que los humanos interactúen a través de interfaces para operar dispositivos y ejecutar funciones.
 

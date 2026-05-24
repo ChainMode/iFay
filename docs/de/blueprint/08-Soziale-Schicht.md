@@ -1,4 +1,4 @@
-# 8. Soziale Schicht
+# 08. Soziale Schicht
 
 Die Soziale Schicht definiert iFays **Existenzmodus** in der Gesellschaft — sie beantwortet drei grundlegende Fragen: „Wer bin ich" (Identität), „Was bin ich berechtigt zu tun" (Soziale Berechtigungen) und „Wie viel sind meine Beiträge wert" (Sozialer Beitrag & Mitspracherecht).
 

@@ -1,4 +1,4 @@
-# 2. Definition und Konzept
+# 02. Definition und Konzept
 
 ## Produktspezifische Begriffe
 

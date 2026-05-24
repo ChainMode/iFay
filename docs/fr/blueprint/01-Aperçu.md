@@ -1,4 +1,4 @@
-# 1. Aperçu
+# 01. Aperçu
 
 **iFay (Individual Fay) est un avatar numérique IA qui fusionne les traits de personnalité d'un utilisateur avec des capacités numériques.**
 

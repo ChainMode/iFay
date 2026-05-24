@@ -1,4 +1,4 @@
-# 4. Feuille de route : 5 phases
+# 04. Feuille de route : 5 phases
 
 Nous sommes encore dans l'« Ère des opérations humaines » — le matériel et les logiciels dépendent des humains interagissant via des interfaces pour piloter les appareils et exécuter les fonctions.
 

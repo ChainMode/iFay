@@ -1,4 +1,4 @@
-# 7. iFay Profile
+# 07. iFay Profile
 
 iFay Profile is iFay's complete "identity card" — a semantically interpretable six-dimensional attribute table. It not only lets humans identify an iFay, but also lets systems parse it, and more importantly, lets Fays recognize each other.
 

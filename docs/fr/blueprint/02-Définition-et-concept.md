@@ -1,4 +1,4 @@
-# 2. Définition et concept
+# 02. Définition et concept
 
 ## Termes spécifiques au produit
 

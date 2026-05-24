@@ -1,4 +1,4 @@
-# 9. Interaktionsschicht — Wahrnehmung
+# 09. Interaktionsschicht — Wahrnehmung
 
 Das Wahrnehmungssubsystem der Interaktionsschicht ist iFays „Sinne“ — es lässt iFay den Bildschirm sehen, die Umgebung wahrnehmen und deine Absichten lesen.
 

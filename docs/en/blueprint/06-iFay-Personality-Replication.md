@@ -1,4 +1,4 @@
-# 6. iFay Is a Replication of Human Personality
+# 06. iFay Is a Replication of Human Personality
 
 iFay's personality is not generated from thin air — it is instantiated from the Human Prime (Prime). Every iFay is a personality extension of its Human Prime, and this extension requires a structured injection process.
 

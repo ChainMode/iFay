@@ -1,4 +1,4 @@
-# 7. iFay-Profil
+# 07. iFay-Profil
 
 Das iFay-Profil ist iFays vollständiger „Personalausweis" — eine semantisch interpretierbare sechs-dimensionale Attributtabelle. Es lässt nicht nur Menschen eine iFay identifizieren, sondern auch Systeme sie parsen, und vor allem Fays sich gegenseitig erkennen.
 

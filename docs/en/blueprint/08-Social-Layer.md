@@ -1,4 +1,4 @@
-# 8. Social Layer
+# 08. Social Layer
 
 The Social Layer defines iFay's **mode of existence** in society — it answers three fundamental questions: "Who am I" (Identity), "What am I authorized to do" (Social Permissions), and "How much are my contributions worth" (Social Contribution & Voice).
 

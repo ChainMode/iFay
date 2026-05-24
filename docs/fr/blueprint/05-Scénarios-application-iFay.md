@@ -1,4 +1,4 @@
-# 5. Scénarios d'application iFay
+# 05. Scénarios d'application iFay
 
 # Injection des traits du Prime dans iFay
 

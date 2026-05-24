@@ -1,4 +1,4 @@
-# 1. Überblick
+# 01. Überblick
 
 **iFay (Individual Fay) ist ein digitaler KI-Avatar, der die Persönlichkeitsmerkmale eines Nutzers mit digitalen Fähigkeiten verschmilzt.**
 

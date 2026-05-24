@@ -1,6 +1,6 @@
 <img width="100%" alt="iFay Title Banner" src="./illustration/ifay-title-banner.png"/>
 
-# 3. Principes de conception
+# 03. Principes de conception
 
 iFay (Individual Fay) est un avatar numérique IA profondément lié à une personne physique. Ce n'est pas un outil, mais une extension de votre personnalité — fusionnant votre caractère, vos souvenirs, vos préférences et vos capacités numériques, prenant en charge votre travail mécanique, répétitif et dangereux, et amplifiant votre valeur sociale. iFay adopte le framework CPE+M (Contexte, Protocole, Environnement, Mérite), constitué d'une architecture à quatre couches — Couche Sociale, Couche d'Interaction, Couche de Cognition et Couche Ego — couvrant cinq phases évolutives allant de la simulation des opérations humaines à la redéfinition de la structure du travail et de la distribution de la valeur.
 

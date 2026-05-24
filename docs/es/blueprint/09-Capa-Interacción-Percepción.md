@@ -1,4 +1,4 @@
-# 9. Capa de Interacción — Percepción
+# 09. Capa de Interacción — Percepción
 
 El subsistema de Percepción de la Capa de Interacción son los "sentidos" de iFay — permite a iFay ver la pantalla, percibir el entorno y leer tus intenciones.
 

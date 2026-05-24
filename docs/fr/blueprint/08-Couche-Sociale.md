@@ -1,4 +1,4 @@
-# 8. Couche Sociale
+# 08. Couche Sociale
 
 La Couche Sociale définit le **mode d'existence** d'iFay dans la société — elle répond à trois questions fondamentales : « Qui suis-je » (Identité), « Que suis-je autorisé à faire » (Permissions Sociales) et « Combien valent mes contributions » (Contribution Sociale & Voix).
 

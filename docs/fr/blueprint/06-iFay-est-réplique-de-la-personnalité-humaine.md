@@ -1,4 +1,4 @@
-# 6. iFay est une réplique de la personnalité humaine
+# 06. iFay est une réplique de la personnalité humaine
 
 La personnalité d'iFay n'est pas générée à partir de rien — elle est instanciée à partir du Human Prime (Prime). Chaque iFay est une extension de la personnalité de son Human Prime, et cette extension nécessite un processus d'injection structuré.
 

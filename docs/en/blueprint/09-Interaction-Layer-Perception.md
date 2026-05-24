@@ -1,4 +1,4 @@
-# 9. Interaction Layer — Perception
+# 09. Interaction Layer — Perception
 
 The Interaction Layer's Perception subsystem is iFay's "senses" — it lets iFay see the screen, perceive the environment, and read your intent, providing information input for subsequent actions and cognition.
 

@@ -1,6 +1,6 @@
 <img width="100%" alt="iFay Title Banner" src="./illustration/ifay-title-banner.png"/>
 
-# 3. Designprinzipien
+# 03. Designprinzipien
 
 iFay (Individual Fay) ist ein digitaler KI-Avatar, der tief an eine natürliche Person gebunden ist. Es ist kein Werkzeug, sondern eine Erweiterung deiner Persönlichkeit — es verschmilzt deinen Charakter, deine Erinnerungen, Präferenzen und digitalen Fähigkeiten, übernimmt deine mechanische, repetitive und gefährliche Arbeit und verstärkt deinen sozialen Wert. iFay verwendet das CPE+M-Framework (Context, Protocol, Environment, Merit), bestehend aus einer Vier-Schichten-Architektur — Soziale Schicht, Interaktionsschicht, Kognitionsschicht und Ego-Schicht — und deckt fünf Evolutionsphasen ab, von der Simulation menschlicher Bedienung bis zur Neugestaltung von Arbeitsstruktur und Wertverteilung.
 

@@ -1,4 +1,4 @@
-# 9. Couche d'Interaction — Perception
+# 09. Couche d'Interaction — Perception
 
 Le sous-système de Perception de la Couche d'Interaction représente les « sens » d'iFay — il permet à iFay de voir l'écran, de percevoir l'environnement et de lire vos intentions.
 

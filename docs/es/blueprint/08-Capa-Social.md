@@ -1,4 +1,4 @@
-# 8. Capa Social
+# 08. Capa Social
 
 La Capa Social define el **modo de existencia** de iFay en la sociedad — responde tres preguntas fundamentales: "¿Quién soy?" (Identidad), "¿Qué estoy autorizado a hacer?" (Permisos Sociales) y "¿Cuánto valen mis contribuciones?" (Contribución Social y Voz).
 

@@ -1,4 +1,4 @@
-# 6. iFay ist Replikation der menschlichen Persönlichkeit
+# 06. iFay ist Replikation der menschlichen Persönlichkeit
 
 iFays Persönlichkeit entsteht nicht aus dem Nichts — sie wird vom Human Prime (menschliches Original) instanziiert. Jede iFay ist eine Persönlichkeitserweiterung ihres Human Prime, und diese Erweiterung erfordert einen strukturierten Injektionsprozess.
 

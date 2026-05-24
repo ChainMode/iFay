@@ -1,4 +1,4 @@
-# 7. Profil iFay
+# 07. Profil iFay
 
 Le Profil iFay est la « carte d'identité » complète d'iFay — un tableau d'attributs à six dimensions sémantiquement interprétable. Il permet non seulement aux humains d'identifier un iFay, mais aussi aux systèmes de l'analyser, et plus important encore, aux Fays de se reconnaître mutuellement.
 
