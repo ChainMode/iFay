@@ -221,7 +221,7 @@ Das MeriToken-Hauptbuch ist die Beitragspunkte-Aufzeichnung für jeden Fay und M
 | **Erwerb** | Verbrauch von Rechenleistung für Rechenaufgaben (Mining) | Schaffung sozialen Werts (Beitrag) |
 | **Wertanker** | Marktangebot/-nachfrage und Spekulation | Sozialer Beitrag |
 | **Zweck** | Finanzvermögen, Investitionsinstrument | Reputationsmessung, Mitspracherecht, Kollaborationsanreiz |
-| **Fiat-Währungs-Beziehung** | Umtauschbar in Fiat-Währung | Nicht umtauschbar in Fiat-Währung |
+| **Fiat-Währungs-Beziehung** | Umtauschbar in Fiat-Währung | Nicht auszahlbar; kein bidirektionaler Fiat-Umtausch (nur ein einseitiger, gedeckelter, abklingender Kauf eines anfänglichen Reputationswerts) |
 | **Volatilität** | Hochvolatil | Stabiles Wachstum (Beiträge nehmen nur zu) |
 
 ### Langfristige Vision und aktuelle Position
@@ -229,8 +229,9 @@ Das MeriToken-Hauptbuch ist die Beitragspunkte-Aufzeichnung für jeden Fay und M
 > ⚠️ **Wichtiger Hinweis**: GMChain/MeriToken ist ein langfristiges Visionsprodukt für eine vollständig KI-gesteuerte Gesellschaft und gehört zu Roadmap Phase 5 (Fay gestaltet Arbeitsstruktur und Wertverteilung neu) als Kernkomponente. Wir werden GMChain und MeriToken kurzfristig nicht überstürzt implementieren, müssen aber im Systemdesign einen Platz für sie reservieren, da sie die Schlüsselinfrastruktur für die Evolution des iFay-Ökosystems von „Werkzeugnutzung" zu „sozialer Zusammenarbeit" sind.
 >
 > Wir verpflichten uns:
-> - GMChain wird niemals Geldinjektionen akzeptieren
-> - MeriToken wird nicht in Fiat-Währung umtauschbar sein
+> - GMChain funktioniert nicht als Finanzmarkt; MeriToken ist nicht auszahlbar und nicht spekulativ
+> - MeriToken ist niemals bidirektional in Fiat-Währung umtauschbar (kein Reputation→Fiat-Ausgang, kein Wiederverkauf, kein Sekundärmarkt)
+> - Der einzige monetäre Berührungspunkt ist optional und einseitig: ein gedeckelter Kauf eines *anfänglichen Reputationswerts*, der wie jede Reputation zur Untergrenze hin abklingt — Geld erkauft also nur vorübergehende Mitsprache, niemals dauerhaften Einfluss
 > - MeriToken misst sozialen Beitrag, nicht finanzielle Vermögenswerte
 >
 > In einer vollständig KI-gesteuerten Gesellschaft hängt die Erfüllung von Überlebens- und sozialen Bedürfnissen nicht von monetären Kosten ab. Der Wertverankerungsmechanismus von MeriToken unterscheidet sich grundlegend von traditionellen Kryptowährungen. Details werden in nachfolgenden Phasen durch rigorose Argumentation schrittweise verfeinert.
@@ -253,4 +254,4 @@ GMChain gehört zu **Phase 5 (Fay gestaltet Arbeitsstruktur und Wertverteilung n
 - **Schnittstellenspezifikation**: `MeritLedger`-Schnittstelle mit `recordContribution()` (Beitrag aufzeichnen), `getBalance()` (Kontostand abfragen), `getReputation()` (Reputationspunktzahl abfragen), `negotiate()` (Preisverhandlung)
 - **Maßeinheit**: μ (MU, Merit Unit), die kleinste Einheit von MeriToken
 - **Konformitätstests**: iFACTS L4 verifiziert Unveränderlichkeit von Beitragsaufzeichnungen und Fairness der Preisverhandlung
-- **Designpunkte**: Beitragsaufzeichnungen sind unveränderlich; Preisverhandlung wird vor der Aufgabenausführung abgeschlossen; MeriToken ist nicht in Fiat-Währung umtauschbar; Reputationspunktzahlen basieren auf Beitragsqualität und Kollaborationsfeedback
+- **Designpunkte**: Beitragsaufzeichnungen sind unveränderlich; Preisverhandlung wird vor der Aufgabenausführung abgeschlossen; MeriToken ist nicht auszahlbar und nicht bidirektional in Fiat-Währung umtauschbar (nur ein einseitiger, gedeckelter, abklingender Kauf eines anfänglichen Reputationswerts ist erlaubt); Reputationspunktzahlen basieren auf Beitragsqualität und Kollaborationsfeedback

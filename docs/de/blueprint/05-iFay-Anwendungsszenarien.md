@@ -238,7 +238,7 @@ Der Wertfluss im iFay-Ökosystem wird durch GMChain (Global Merit Chain) und Mer
 - Laufzeitumgebungsbereitstellung
 - Andere identifizierbare wertschöpfende Inputs
 
-Der MeriToken-Erwerb basiert auf der Schaffung sozialen Werts, nicht auf dem Verbrauch von Rechenleistung für technische Blockchain-Arbeit. GMChain unterstützt gerichtete Ausgabe, die durch Fiat-Währung, Anleihen, Vermögenszertifikate, Gold und andere Sicherheiten gedeckt ist, und interagiert mit realen Wertanerkennungsmethoden.
+Der MeriToken-Erwerb basiert auf der Schaffung sozialen Werts, nicht auf dem Verbrauch von Rechenleistung für technische Blockchain-Arbeit. Der einzige monetäre Berührungspunkt des Ökosystems ist optional und streng einseitig: Eine Human Prime kann einmalig und einseitig einen gedeckelten *anfänglichen Reputationswert* erwerben, ausschließlich um die gegenwärtige Mitsprache und das Kaltstartproblem zu lösen. Wie jede Reputation klingt dieser erworbene Wert mit der Zeit ab und kollabiert zur Untergrenze – ein Kauf erkauft also nur einen vorübergehenden Vorsprung, niemals dauerhafte Mitsprache. MeriToken selbst bleibt nicht auszahlbar, nicht spekulativ und niemals bidirektional in Fiat-Währung umtauschbar (es gibt keinen Reputation→Fiat-Ausgang). Im stationären Zustand wird die Mitsprache durch fortlaufenden Beitrag bestimmt, nicht durch den anfänglichen Kauf. (Abklingfunktion, Untergrenze, Kaufobergrenze und Einseitigkeit werden durch die GMChain-Spezifikation definiert; siehe ADR `decisions/0001`.)
 
 
 ## Szenario: Eine Drohnensteuerungs-iFay an einem Wochenende bauen

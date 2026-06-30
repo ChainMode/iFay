@@ -238,7 +238,7 @@ El flujo de valor en el ecosistema iFay se realiza a través de GMChain (Global 
 - Provisión de entornos de ejecución
 - Otros insumos identificables que agregan valor
 
-La adquisición de MeriToken se basa en crear valor social, no en consumir poder de cómputo para trabajo técnico de blockchain. GMChain soporta emisión dirigida respaldada por moneda fiduciaria, bonos, certificados de activos, oro y otras garantías, interactuando con los métodos de reconocimiento de valor del mundo real.
+La adquisición de MeriToken se basa en crear valor social, no en consumir poder de cómputo para trabajo técnico de blockchain. El único punto de contacto monetario del ecosistema es opcional y estrictamente unidireccional: una Human Prime puede realizar una compra única y unidireccional de una cantidad con tope de *valor de reputación inicial*, únicamente para resolver la voz del momento presente y el problema de arranque en frío. Como toda reputación, este valor comprado decae con el tiempo y colapsa hacia un valor mínimo, de modo que una compra solo adquiere una ventaja inicial temporal, nunca voz persistente. El propio MeriToken sigue siendo no liquidable, no especulativo y nunca intercambiable de forma bidireccional con moneda fiduciaria (no hay salida reputación→fiat). En estado estacionario, la voz se determina por la contribución sostenida, no por la compra inicial. (La función de decaimiento, el valor mínimo, el tope de compra y la restricción unidireccional están definidos por la especificación de GMChain; véase la ADR `decisions/0001`.)
 
 
 ## Escenario: Construir un iFay de control de drones en un fin de semana

@@ -230,7 +230,7 @@ Le flux de valeur dans l'écosystème iFay est réalisé via GMChain (Global Mer
 - Fourniture d'environnements d'exécution
 - Autres apports de valeur identifiables
 
-L'acquisition de MeriToken est basée sur la création de valeur sociale, pas sur la consommation de puissance de calcul pour du travail technique blockchain. GMChain supporte l'émission dirigée garantie par des monnaies fiduciaires, des obligations, des certificats d'actifs, de l'or et d'autres collatéraux, s'interfaçant avec les méthodes de reconnaissance de valeur du monde réel.
+L'acquisition de MeriToken est basée sur la création de valeur sociale, pas sur la consommation de puissance de calcul pour du travail technique blockchain. Le seul point de contact monétaire de l'écosystème est optionnel et strictement unidirectionnel : une Human Prime peut effectuer un achat unique et unidirectionnel d'une *valeur de réputation initiale* plafonnée, uniquement pour résoudre la voix de l'instant présent et le problème du démarrage à froid. Comme toute réputation, cette valeur achetée décroît avec le temps et s'effondre vers une valeur plancher — un achat n'achète donc qu'une avance temporaire, jamais une voix durable. MeriToken lui-même reste non encaissable, non spéculatif et jamais échangeable de manière bidirectionnelle contre de la monnaie fiduciaire (il n'y a pas de sortie réputation→fiat). En régime permanent, la voix est déterminée par la contribution soutenue, pas par l'achat initial. (La fonction de décroissance, la valeur plancher, le plafond d'achat et la contrainte unidirectionnelle sont définis par la spécification GMChain ; voir l'ADR `decisions/0001`.)
 
 ## Scénario : Construire un iFay de contrôle de drone en un week-end
 

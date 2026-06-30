@@ -221,7 +221,7 @@ El Libro mayor de MeriToken es el registro de puntuación de contribución para 
 | **Adquisición** | Consumo de poder de cómputo para tareas computacionales (minería) | Creación de valor social (contribución) |
 | **Ancla de valor** | Oferta/demanda del mercado y especulación | Contribución social |
 | **Propósito** | Activo financiero, instrumento de inversión | Medición de reputación, voz, incentivo de colaboración |
-| **Relación con moneda fiat** | Intercambiable con moneda fiat | No intercambiable con moneda fiat |
+| **Relación con moneda fiat** | Intercambiable con moneda fiat | No liquidable; sin intercambio fiat bidireccional (solo una compra unidireccional, con tope y decreciente de un valor de reputación inicial) |
 | **Volatilidad** | Altamente volátil | Crecimiento estable (las contribuciones solo aumentan) |
 
 ### Visión a largo plazo y posición actual
@@ -229,8 +229,9 @@ El Libro mayor de MeriToken es el registro de puntuación de contribución para 
 > ⚠️ **Nota importante**: GMChain/MeriToken es un producto de visión a largo plazo para una sociedad completamente impulsada por IA, perteneciente a la Fase 5 de la Hoja de ruta (Fay remodela la estructura laboral y la distribución de valor) como componente central. No nos apresuraremos a implementar GMChain y MeriToken a corto plazo, pero debemos reservar un lugar para ellos en el diseño del sistema porque son la infraestructura clave para la evolución del ecosistema iFay de "uso de herramientas" a "colaboración social".
 >
 > Nos comprometemos a:
-> - GMChain nunca aceptará inyección monetaria
-> - MeriToken no será intercambiable con moneda fiat
+> - GMChain no funciona como un mercado financiero; MeriToken no es liquidable ni especulativo
+> - MeriToken nunca es intercambiable de forma bidireccional con moneda fiat (sin salida reputación→fiat, sin reventa, sin mercado secundario)
+> - El único punto de contacto monetario es opcional y unidireccional: una compra con tope de un *valor de reputación inicial* que, como toda reputación, decae hacia un valor mínimo — el dinero solo compra voz temporal, nunca influencia persistente
 > - MeriToken mide contribución social, no activos financieros
 >
 > En una sociedad completamente impulsada por IA, la satisfacción de necesidades de supervivencia y sociales no depende del costo monetario. El mecanismo de anclaje de valor de MeriToken es fundamentalmente diferente de las criptomonedas tradicionales. Los detalles se refinarán progresivamente a través de argumentación rigurosa en fases posteriores.
@@ -253,4 +254,4 @@ GMChain pertenece a la **Fase 5 (Fay remodela la estructura laboral y la distrib
 - **Especificación de interfaz**: Interfaz `MeritLedger` con `recordContribution()` (registrar contribución), `getBalance()` (consultar saldo), `getReputation()` (consultar puntuación de reputación), `negotiate()` (negociación de precios)
 - **Unidad de medida**: μ (MU, Merit Unit), la unidad más pequeña de MeriToken
 - **Pruebas de conformidad**: iFACTS L4 verifica inmutabilidad de registros de contribución y equidad de la negociación de precios
-- **Puntos de diseño**: Los registros de contribución son inmutables; la negociación de precios se completa antes de la ejecución de la tarea; MeriToken no es intercambiable con moneda fiat; las puntuaciones de reputación se basan en calidad de contribución y feedback de colaboración
+- **Puntos de diseño**: Los registros de contribución son inmutables; la negociación de precios se completa antes de la ejecución de la tarea; MeriToken no es liquidable ni intercambiable de forma bidireccional con moneda fiat (solo se permite una compra unidireccional, con tope y decreciente de un valor de reputación inicial); las puntuaciones de reputación se basan en calidad de contribución y feedback de colaboración

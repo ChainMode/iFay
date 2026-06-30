@@ -238,7 +238,7 @@ Value flow in the iFay ecosystem is realized through GMChain (Global Merit Chain
 - Runtime environment provision
 - Other identifiable value-adding inputs
 
-MeriToken acquisition is based on creating social value, not consuming computing power for blockchain technical work. GMChain supports directed issuance backed by fiat currency, bonds, asset certificates, gold, and other collateral, interfacing with real-world value recognition methods.
+MeriToken acquisition is based on creating social value, not consuming computing power for blockchain technical work. The ecosystem's only monetary touchpoint is optional and strictly one-way: a Human Prime may make a one-way purchase of a capped amount of *initial reputation value*, solely to address present-moment voice and the cold-start problem. Like all reputation, this purchased value decays over time and collapses toward a floor value — so a purchase buys only a temporary head start, never persistent voice. MeriToken itself remains non-cashable, non-speculative, and is never bidirectionally exchangeable with fiat currency (there is no reputation-to-fiat exit). At steady state, voice is determined by sustained contribution, not by the initial purchase. (The decay function, floor value, purchase cap, and one-way constraint are defined by the [GMChain specification](https://github.com/ChainModePilot/Global-Merit-Chain); see ADR `decisions/0001`.)
 
 
 ## Scenario: Building a Drone Control iFay in a Weekend

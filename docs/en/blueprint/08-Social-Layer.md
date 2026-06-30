@@ -221,7 +221,7 @@ The MeriToken Ledger is the contribution score record for each Fay and human. It
 | **Acquisition** | Consuming computing power for computational tasks (mining) | Creating social value (contribution) |
 | **Value Anchor** | Market supply/demand and speculation | Social contribution |
 | **Purpose** | Financial asset, investment tool | Reputation measurement, voice, collaboration incentive |
-| **Fiat Currency Relationship** | Exchangeable with fiat currency | Not exchangeable with fiat currency |
+| **Fiat Currency Relationship** | Exchangeable with fiat currency | Non-cashable; no bidirectional fiat exchange (only a one-way, capped, decaying initial-reputation purchase) |
 | **Volatility** | Highly volatile | Stable growth (contributions only increase) |
 
 ### Long-term Vision and Current Position
@@ -229,8 +229,9 @@ The MeriToken Ledger is the contribution score record for each Fay and human. It
 > ⚠️ **Important Note**: GMChain/MeriToken is a long-term vision product for a fully AI-driven society, belonging to Roadmap Phase 5 (Fay Reshapes Labor Structure and Value Distribution) as a core component. We will not rush to implement GMChain and MeriToken in the short term, but must reserve a place for them in the system design because they are the key infrastructure for the iFay ecosystem's evolution from "tool usage" to "social collaboration."
 >
 > We commit:
-> - GMChain will never accept monetary injection
-> - MeriToken will not be exchangeable with fiat currency
+> - GMChain does not operate as a financial market; MeriToken is non-cashable and non-speculative
+> - MeriToken is never bidirectionally exchangeable with fiat currency (no reputation-to-fiat exit, no resale, no secondary market)
+> - The sole monetary touchpoint is optional and one-way: a capped purchase of *initial reputation value* that, like all reputation, decays toward a floor value — so money buys only temporary voice, never persistent influence
 > - MeriToken measures social contribution, not financial assets
 >
 > In a fully AI-driven society, the fulfillment of survival and social needs does not depend on monetary cost. MeriToken's value-anchoring mechanism is fundamentally different from traditional cryptocurrencies. Details will be progressively refined through rigorous argumentation in subsequent phases.
@@ -253,4 +254,4 @@ GMChain belongs to **Phase 5 (Fay Reshapes Labor Structure and Value Distributio
 - **Interface Specification**: `MeritLedger` interface with `recordContribution()` (record contribution), `getBalance()` (query balance), `getReputation()` (query reputation score), `negotiate()` (price negotiation)
 - **Unit of Measurement**: μ (MU, Merit Unit), the smallest unit of MeriToken
 - **Conformance Testing**: iFACTS L4 verifies immutability of contribution records and fairness of price negotiation
-- **Design Points**: Contribution records are immutable; price negotiation completes before task execution; MeriToken is not exchangeable with fiat currency; reputation scores are based on contribution quality and collaboration feedback
+- **Design Points**: Contribution records are immutable; price negotiation completes before task execution; MeriToken is non-cashable and not bidirectionally exchangeable with fiat currency (only a one-way, capped, decaying initial-reputation purchase is allowed); reputation scores are based on contribution quality and collaboration feedback
