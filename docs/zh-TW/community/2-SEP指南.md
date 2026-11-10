@@ -2,7 +2,7 @@
 
 ## 什麼是 SEP
 
-SEP（Specification Enhancement Proposal）是 iFay 規範變更的正式提案流程。任何對 iFay 規範的實質性修改——無論是新增模組、修改協議行為，還是調整 iFay Profile 的資料模型——都應透過 SEP 流程進行。
+SEP（Specification Enhancement Proposal）是 iFay 規範變更的正式提案流程。任何對 iFay 規範的實質性修改——無論是新增模組、修改協定行為，還是調整 iFay Profile 的資料模型——都應透過 SEP 流程進行。
 
 ## 為什麼需要 SEP
 
@@ -72,4 +72,4 @@ SEP 進入公開討論期，至少持續 **14 天**。在此期間：
 
 ## 特別說明
 
-涉及協議變更的 SEP 需要特別注意：由於 iFay 的各協議（Faying、Telepathy、ICP、CAP、DTP、SSP）對應獨立的子專案，相關協議的維護者必須參與審查。例如，修改控制許可權協議（CAP）行為的 SEP，需要 WG-Protocols 工作組的維護者參與評估其對裝置驅動中樞、FayGer 執行時等相關模組的影響。
+涉及協定變更的 SEP 需要特別注意：由於 iFay 的各協定（Faying、Telepathy、ICP、CAP、DTP、SSP）對應獨立的子專案，相關協定的維護者必須參與審查。例如，修改控制許可權協定（CAP）行為的 SEP，需要 WG-Protocols 工作組的維護者參與評估其對裝置驅動中樞、FayGer 執行時等相關模組的影響。

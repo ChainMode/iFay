@@ -40,7 +40,7 @@ Imagine un futuro donde las personas ya no tengan que decidir qué sitio web o a
 
 ## 9. La regulación llega antes que nunca
 
-Los líderes de opinión declararon: "Si no utilizas IA en el futuro, serás un perdedor", y pronto comenzaron a obtener ganancias ofreciendo cursos. OpenAI demostró además que millones de nuevas "apps", o Agents, pueden surgir en solo una semana. Como resultado, una gran cantidad de datos sensibles se está cargando en centros de datos a nivel mundial, lo que lleva a una mezcla descontrolada de valores contradictorios. Ningún otro tipo de producto ha atraído la atención del gobierno tan rápidamente.
+Los líderes de opinión declararon: "Si no utilizas IA en el futuro, serás un perdedor", y pronto comenzaron a obtener ganancias ofreciendo cursos. OpenAI demostró además que millones de nuevas "apps", o agentes, pueden surgir en solo una semana. Como resultado, una gran cantidad de datos sensibles se está cargando en centros de datos a nivel mundial, lo que lleva a una mezcla descontrolada de valores contradictorios. Ningún otro tipo de producto ha atraído la atención del gobierno tan rápidamente.
 
 ## 10. La IA ha descendido del pedestal tecnológico para ser accesible a la gente común
 

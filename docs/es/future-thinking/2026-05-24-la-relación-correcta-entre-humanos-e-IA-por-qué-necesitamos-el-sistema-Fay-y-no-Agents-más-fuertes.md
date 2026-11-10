@@ -1,8 +1,8 @@
 <!-- URL path: /2026-05-24 -->
 
-# La relación correcta entre humanos e IA: por qué necesitamos el sistema Fay y no Agents más fuertes
+# La relación correcta entre humanos e IA: por qué necesitamos el sistema Fay y no agentes más fuertes
 
-Permítanme adelantar la conclusión: no creo que lo que la humanidad realmente necesite sean “Agents más fuertes”. Lo que de verdad necesitamos es una entidad de IA que **pueda ser identificada, restringida y responsabilizada** dentro de la sociedad.
+Permítanme adelantar la conclusión: no creo que lo que la humanidad realmente necesite sean “agentes más fuertes”. Lo que de verdad necesitamos es una entidad de IA que **pueda ser identificada, restringida y responsabilizada** dentro de la sociedad.
 
 Porque si la IA es solo una máquina, simplemente se volverá cada vez más fuerte, y la sociedad cada vez tendrá más miedo. Cualquier “narrativa de amenaza de IA” que veas, aunque aparentemente trate sobre tecnología, en el fondo plantea la misma pregunta: cuando la IA empieza a actuar, ¿quién carga con las consecuencias?
 
@@ -38,9 +38,9 @@ Lo que la gente realmente teme no es que la IA calcule rápido, sino que las acc
 
 ---
 
-Luego viene el segundo consenso: los Agents reemplazarán al software, e incluso reemplazarán grandes cantidades de trabajo.
+Luego viene el segundo consenso: los agentes reemplazarán al software, e incluso reemplazarán grandes cantidades de trabajo.
 
-No me opongo a esta tendencia; de hecho, me parece demasiado evidente: cuando las tareas son lo suficientemente “verificables”, se vuelven fáciles de optimizar, automatizar y escalar. El coste marginal de un Agent tiende a cero: puede descomponer tareas, ejecutar en paralelo, replicarse sin límite. Para las empresas es una tentación casi irresistible.
+No me opongo a esta tendencia; de hecho, me parece demasiado evidente: cuando las tareas son lo suficientemente “verificables”, se vuelven fáciles de optimizar, automatizar y escalar. El coste marginal de un agente tiende a cero: puede descomponer tareas, ejecutar en paralelo, replicarse sin límite. Para las empresas es una tentación casi irresistible.
 
 El problema es que el “Agent” del que hablamos hoy suele ser un “paquete mecanizado de capacidades”. Es bueno ejecutando tareas, pero carece de un papel social natural:
 
@@ -68,17 +68,17 @@ Usamos el concepto de “Human Prime” para fijar el modelo de relación: tú e
 
 ---
 
-Para que la discusión sea concreta, suelo agrupar los problemas sociales que trae “Agents en estado libre y a gran escala” en 12 categorías. Puedes tomarlo como un mapa de riesgos: no para asustar a nadie, sino para dar prioridades de diseño:
+Para que la discusión sea concreta, suelo agrupar los problemas sociales que trae “agentes en estado libre y a gran escala” en 12 categorías. Puedes tomarlo como un mapa de riesgos: no para asustar a nadie, sino para dar prioridades de diseño:
 
 1) Vacío de responsabilidad: ocurren consecuencias pero no hay a quién responsabilizar; al final solo queda miedo y oposición.
-2) Permisos desbordados y extralimitación: para que el Agent funcione se le otorgan permisos completos, lo que amplía el radio de cualquier incidente.
+2) Permisos desbordados y extralimitación: para que el agente funcione se le otorgan permisos completos, lo que amplía el radio de cualquier incidente.
 3) Abuso replicable: capacidades de fraude, manipulación y ataque se replican sin límite; la sociedad recibe capacidad escalada, pero no responsabilidad escalada.
 4) Decisiones en caja negra y resultados no apelables: si denegaciones de crédito, control de riesgos, contratación o triaje no son explicables ni rastreables, el debido proceso colapsa.
 5) Choque de desempleo desligado de responsabilidad: las empresas externalizan los costes sociales a las personas y al gobierno; surgen incluso narrativas de “AI washing”.
 6) Punto de entrada de la personalidad monopolizado por plataformas: cuando todos dependen de un punto de entrada de IA, la propiedad de ese punto es propiedad de la identidad.
 7) Opinión pública y atención industrializadas mediante automatización: el coste de producción de contenido cae a cero y los mecanismos de hechos públicos quedan inundados.
 8) Externalización del juicio que lleva al deterioro de capacidades: hay menos personas que saben hacer y aún menos que saben revisar; la fragilidad social en realidad aumenta.
-9) Deriva de valores y desajuste de personalidad: los Agents se alinean con objetivos de plataforma en lugar de con valores personales, lo que termina por colapsar la confianza.
+9) Deriva de valores y desajuste de personalidad: los agentes se alinean con objetivos de plataforma en lugar de con valores personales, lo que termina por colapsar la confianza.
 10) Responsabilidad organizacional diluida: plataformas, proveedores y usuarios se pasan la culpa; al final nadie responde por el daño sistémico.
 11) La regulación solo puede oscilar entre “laissez-faire” y “prohibición total”: sin límites auditables, la gobernanza se vuelve guiada por el pánico.
 12) La división del trabajo humano-máquina y la reorganización de la identidad social se descontrolan: cuando las máquinas asumen la mayor parte de la producción, el valor humano y la identidad deben reescribirse; de lo contrario, las brechas se profundizan.
@@ -99,7 +99,7 @@ También está la parte que mira más lejos: cuando la productividad sea masivam
 
 Tampoco podemos esquivar la “continuación de la personalidad”: si iFay es realmente un contenedor digital de personalidad, no es una cuenta que se pueda borrar a la ligera. Guardianship aborda qué sucede cuando el Human Prime ya no está: cómo se transfieren los derechos de gestión, cómo se aísla el cementerio digital, qué conductas deben prohibirse, cómo se realiza la auditoría de cumplimiento: https://ifay.ai/es/docs/iFay/blueprint/15-Guardianship
 
-Verás que nada de esto puede parchearse con “un Agent”. Porque son el esqueleto que requiere una “entidad socialmente responsable”.
+Verás que nada de esto puede parchearse con “un agente”. Porque son el esqueleto que requiere una “entidad socialmente responsable”.
 
 ---
 
@@ -113,10 +113,10 @@ coFay se parece más a “activos sociales de organizaciones y servicios públic
 
 Para ponerlo en un contraste muy intuitivo:
 
-- Un mundo de Agents puros se parece más a “drones por todas partes”: vuelan, trabajan, pero no sabes quién pilota y no hay a quién recurrir si algo sale mal.
+- Un mundo de agentes puros se parece más a “drones por todas partes”: vuelan, trabajan, pero no sabes quién pilota y no hay a quién recurrir si algo sale mal.
 - Un mundo Fay se parece más a “cada dron tiene licencia, piloto, registro de vuelo y reglas de espacio aéreo”: sigues obteniendo eficiencia, pero la sociedad puede absorber el riesgo.
 
-Por eso lanzamos iFay, no para construir un Agent de IA que opere de forma independiente del ser humano. Lo que queremos hacer es introducir la IA en la sociedad de manera socialmente responsable —con identidad, con límites, con auditoría, con apelación, con gobernanza— volviendo a unir capacidad y responsabilidad.
+Por eso lanzamos iFay, no para construir un agente de IA que opere de forma independiente del ser humano. Lo que queremos hacer es introducir la IA en la sociedad de manera socialmente responsable —con identidad, con límites, con auditoría, con apelación, con gobernanza— volviendo a unir capacidad y responsabilidad.
 
 Ese es el núcleo de iFay.
 

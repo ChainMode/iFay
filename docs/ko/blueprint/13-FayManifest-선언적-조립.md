@@ -43,7 +43,7 @@ iFay의 설계 원칙 중 하나는 **선언적 극소 조립 + 점진적 채택
 | 단계 | 추가 모듈 | 추가 프로토콜 |
 |------|----------|----------|
 | **1단계**: 인간 조작 시뮬레이션 | FayID, 크리덴셜 관리, 일인칭 추적기, 시뮬레이션 조작, Ego 모델 | Faying 프로토콜, 인터랙티브 대화 프로토콜 |
-| **2단계**: 클라이언트 직접 접수 | 센서, 디바이스 드라이버 허브, 등록 스킬, 스킬 호출, 개인 데이터 힙 | CAP(Control Authority Protocol), DTP(Data Tunnel Protocol) |
+| **2단계**: 클라이언트 직접 인수 | 센서, 디바이스 드라이버 허브, 등록 스킬, 스킬 호출, 개인 데이터 힙 | CAP(Control Authority Protocol), DTP(Data Tunnel Protocol) |
 | **3단계**: 가상 세계 인터페이스 | 외부 지식 | SSP(Skill Sharing Protocol) |
 | **4단계**: 전면 의인화 | 자기인식, 자율 행동, 내부 스킬, 정렬 의식 | 텔레파시 프로토콜(Telepathy Protocol) |
 | **5단계**: 가치 분배 | GMChain, MeriToken | — |
