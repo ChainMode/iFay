@@ -14,6 +14,24 @@ iFay의 설계 원칙 중 하나는 **선언적 극소 조립 + 점진적 채택
 
 ---
 
+## FayManifest 파일 구조
+
+| 필드 | 타입 | 필수 | 설명 |
+|------|------|------|------|
+| `name` | string | ✅ | iFay 구현의 명칭 |
+| `version` | string | ✅ | 버전 번호 |
+| `description` | string | ✅ | 기능 설명 |
+| `vendor` | string | ✅ | 개발사/벤더 명칭 |
+| `fayId` | string | ❌ | 선택적 iFay 신원 식별자 참조 (형식은 FayID 사양에서 권위적으로 정의; 생략 시 조립 단계에서 신원 인프라 자동 보충) |
+| `modules` | array | ✅ | 필요한 모듈 목록 (`version`, `provider`, `config` 지정 가능) |
+| `protocols` | array | ✅ | 필요한 프로토콜 목록 (`version`, `config` 지정 가능) |
+| `controlMode` | string | ✅ | 제어 모드: `command` / `ego` / `autonomous` |
+| `drivers` | array | ❌ | 드라이버 설정 |
+| `ego` | object | ❌ | Ego 모델 설정 |
+| `permissions` | object | ❌ | 권한 설정 |
+
+---
+
 ## 제어 모드
 
 | 모드 | 명칭 | 설명 |
@@ -56,4 +74,4 @@ iFay의 설계 원칙 중 하나는 **선언적 극소 조립 + 점진적 채택
 
 - [iFACTS](./14-iFACTS-적합성-검증) — 적합성 검증
 - [로드맵](./04-로드맵) — 단계 설정
-- [디바이스 드라이버 허브](./12.1-디바이스-드라이버-허브) — 드라이버 설정
+- [디바이스 드라이버 허브](./12-코그니션-레이어-스킬#121-디바이스-드라이버-허브) — 드라이버 설정

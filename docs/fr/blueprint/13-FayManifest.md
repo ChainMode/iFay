@@ -24,6 +24,7 @@ FayManifest utilise le format JSON et contient les champs suivants :
 | `version` | string | ✅ | Numéro de version |
 | `description` | string | ✅ | Description fonctionnelle |
 | `vendor` | string | ✅ | Nom du développeur/fournisseur |
+| `fayId` | string | ❌ | Référence facultative d'identité iFay (format défini de manière faisant autorité par la spécification FayID ; en cas d'omission, l'infrastructure d'identité est complétée lors de l'assemblage) |
 | `modules` | array | ✅ | Liste des modules requis ; chaque module peut spécifier des contraintes de version (`version`), une implémentation fournisseur (`provider`) et une configuration (`config`) |
 | `protocols` | array | ✅ | Liste des protocoles requis ; chaque protocole peut spécifier version et configuration |
 | `controlMode` | string | ✅ | Mode de contrôle : `command` / `ego` / `autonomous` |
@@ -153,4 +154,4 @@ Chaque phase a son Ensemble Minimal de Composants :
 
 - [iFACTS](./14-iFACTS) — Tests de conformité
 - [Feuille de route](./04-Feuille-de-route) — Configuration par phase
-- [Hub pilotes périphériques](./12.1-Hub-pilotes-périphériques) — Configuration des pilotes
+- [Hub pilotes périphériques](./12-Couche-Cognition-Compétences#121-hub-pilotes-périphériques) — Configuration des pilotes

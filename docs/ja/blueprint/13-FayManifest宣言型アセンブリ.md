@@ -22,6 +22,7 @@ iFayの設計原則の一つは**宣言型ミニマルアセンブリ＋漸進�
 | `version` | string | ✅ | バージョン番号 |
 | `description` | string | ✅ | 機能説明 |
 | `vendor` | string | ✅ | 開発元/ベンダー名 |
+| `fayId` | string | ❌ | 任意のiFay身分識別参照（形式はFayID仕様が権威的に定義；省略時はアセンブリ時に身分インフラを自動補完） |
 | `modules` | array | ✅ | 必要なモジュールリスト |
 | `protocols` | array | ✅ | 必要なプロトコルリスト |
 | `controlMode` | string | ✅ | 制御モード：`command` / `ego` / `autonomous` |
@@ -123,4 +124,4 @@ iFACTS（iFay Architecture Conformance Test Suite）はFayManifestの宣言内�
 
 - [iFACTS](./14-iFACTSコンプライアンス検証) — コンプライアンス検証
 - [ロードマップ](./04-ロードマップ) — フェーズ構成
-- [デバイスドライバーハブ](./12.1-デバイスドライバーハブ) — ドライバー設定
+- [デバイスドライバーハブ](./12-コグニションレイヤー-スキル#121-デバイスドライバーハブ) — ドライバー設定

@@ -1,0 +1,9 @@
+{
+  "name": "minimal-ifay",
+  "version": "1.0.0",
+  "description": "Minimal FayManifest fixture",
+  "vendor": "iFay",
+  "modules": [],
+  "protocols": [],
+  "controlMode": "command"
+}

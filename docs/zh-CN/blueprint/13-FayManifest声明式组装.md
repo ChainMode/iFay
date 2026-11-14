@@ -24,6 +24,7 @@ FayManifest 采用 JSON 格式，包含以下字段：
 | `version` | string | ✅ | 版本号 |
 | `description` | string | ✅ | 功能描述 |
 | `vendor` | string | ✅ | 开发商/厂商名称 |
+| `fayId` | string | ❌ | 可选 iFay 身份标识引用（取值格式由 FayID 规范权威定义；省略时在装配期自动补全身份基础设施） |
 | `modules` | array | ✅ | 所需模块列表，每个模块可指定版本约束（`version`）、厂商实现（`provider`）和配置（`config`） |
 | `protocols` | array | ✅ | 所需协议列表，每个协议可指定版本和配置 |
 | `controlMode` | string | ✅ | 控制模式：`command` / `ego` / `autonomous` |
@@ -153,7 +154,7 @@ FayManifest 的核心设计：开发者声明业务部件，系统自动补充�
 | Ego 模型 | 因声明了 `ego` 配置而自动添加 |
 | Faying 协议 | 所有 iFay 必需的安全配对协议 |
 
-最终，这个无人机控制 iFay 实际包含 12 个部件和 3 个协议——但开发者只需要关心其中与无人机业务相关的部分。
+最终，这个无人机控制 iFay 实际包含 11 个模块部件（4 个显式声明的业务模块 + 7 个自动补充的基础设施模块与 Ego 模型）和 3 个协议（2 个显式声明的业务协议 + 1 个自动补充的 Faying 协议）——但开发者只需要关心其中与无人机业务相关的部分。
 
 ---
 

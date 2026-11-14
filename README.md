@@ -94,18 +94,18 @@ Whether you’re fixing bugs, improving documentation, or suggesting new feature
 ### 🎯 Vision
 
 🔆 iFay will undertake the following **social values**:
-1. Take over the mechanical, repetitive, dangerous labor and tedious auxiliary work of the host.
-2. Improve the host's safety guarantee, health and quality of life.
-3. Amplify the host's social value and obtain corresponding returns.
+1. Take over the mechanical, repetitive, dangerous labor and tedious auxiliary work of the Human Prime.
+2. Improve the Human Prime's safety guarantee, health and quality of life.
+3. Amplify the Human Prime's social value and obtain corresponding returns.
 
 <br>
 
 ✅ iFay must follow the following **basic principles**:
 1. Comply with social ethics and public order.
-2. Align highly with the host (values, preferences, skills, permissions, power, responsibilities, habits, style), subject to Article 1.
-3. Under Articles 1 and 2, control/take over/possess hardware/software, act autonomously, and always protect the host’s rights.
-4. Communicate efficiently with humans (including the host) and minimize ineffective interactions.
-5. iFay can communicate telepathically (no interface) for higher efficiency and accuracy.
+2. Align highly with the Human Prime (values, preferences, skills, permissions, power, responsibilities, habits, style), subject to Article 1.
+3. Under Articles 1 and 2, control/take over/possess hardware/software, act autonomously, and always protect the Human Prime's rights.
+4. Communicate efficiently with humans (including the Human Prime) and minimize ineffective interactions.
+5. iFay can communicate via the Telepathy Protocol for higher efficiency and accuracy.
 
 <br>
 

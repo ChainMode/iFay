@@ -22,6 +22,7 @@ Eines von iFays Designprinzipien ist **deklarative minimale Assemblierung + prog
 | `version` | string | ✅ | Versionsnummer |
 | `description` | string | ✅ | Funktionsbeschreibung |
 | `vendor` | string | ✅ | Entwickler-/Anbietername |
+| `fayId` | string | ❌ | Optionale iFay-Identitätsreferenz (Format autoritativ durch die FayID-Spezifikation definiert; bei Auslassung wird die Identitätsinfrastruktur während der Assemblierung ergänzt) |
 | `modules` | array | ✅ | Liste erforderlicher Module |
 | `protocols` | array | ✅ | Liste erforderlicher Protokolle |
 | `controlMode` | string | ✅ | Steuerungsmodus: `command` / `ego` / `autonomous` |
@@ -116,4 +117,4 @@ Nach der Abhängigkeitsauflösung bestimmt das System die iFay-Phase, die dem Ma
 
 - [iFACTS](./14-iFACTS) — Konformitätstests
 - [Roadmap](./04-Roadmap) — Phasenkonfiguration
-- [Gerätetreiber-Hub](./12.1-Gerätetreiber-Hub) — Treiberkonfiguration
+- [Gerätetreiber-Hub](./12-Kognitionsschicht-Skills#121-gerätetreiber-hub) — Treiberkonfiguration

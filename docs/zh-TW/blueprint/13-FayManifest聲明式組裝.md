@@ -24,6 +24,7 @@ FayManifest 採用 JSON 格式，包含以下欄位：
 | `version` | string | ✅ | 版本號 |
 | `description` | string | ✅ | 功能描述 |
 | `vendor` | string | ✅ | 開發商/廠商名稱 |
+| `fayId` | string | ❌ | 選填 iFay 身分識別參照（格式由 FayID 規範權威定義；省略時於裝配階段自動補齊身分基礎設施） |
 | `modules` | array | ✅ | 所需模組列表，每個模組可指定版本約束（`version`）、廠商實作（`provider`）和設定（`config`） |
 | `protocols` | array | ✅ | 所需協定列表，每個協定可指定版本和設定 |
 | `controlMode` | string | ✅ | 控制模式：`command` / `ego` / `autonomous` |
@@ -153,7 +154,7 @@ FayManifest 的核心設計：開發者宣告業務部件，系統自動補充�
 | Ego 模型 | 因宣告了 `ego` 設定而自動添加 |
 | Faying 協定 | 所有 iFay 必需的安全配對協定 |
 
-最終，這個無人機控制 iFay 實際包含 12 個部件和 3 個協定——但開發者只需要關心其中與無人機業務相關的部分。
+最終，這個無人機控制 iFay 實際包含 11 個模組部件（4 個顯式宣告的業務模組 + 7 個自動補充的基礎設施模組與 Ego 模型）和 3 個協定（2 個顯式宣告的業務協定 + 1 個自動補充的 Faying 協定）——但開發者只需要關心其中與無人機業務相關的部分。
 
 ---
 
@@ -191,4 +192,4 @@ iFACTS（iFay Architecture Conformance Test Suite）根據 FayManifest 的宣告
 
 - [iFACTS](./14-iFACTS合規性驗證) — 合規性驗證
 - [路線圖](./04-路線圖) — 階段設定
-- [設備驅動中樞](./12.1-設備驅動中樞) — 驅動設定
+- [設備驅動中樞](./12-認知層-技能#121-設備驅動中樞) — 驅動設定

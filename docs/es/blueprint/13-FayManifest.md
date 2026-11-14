@@ -24,6 +24,7 @@ FayManifest usa formato JSON y contiene los siguientes campos:
 | `version` | string | ✅ | Número de versión |
 | `description` | string | ✅ | Descripción funcional |
 | `vendor` | string | ✅ | Nombre del desarrollador/proveedor |
+| `fayId` | string | ❌ | Referencia opcional de identidad iFay (formato definido de forma autoritativa por la especificación FayID; cuando se omite, la infraestructura de identidad se complementa durante el ensamblaje) |
 | `modules` | array | ✅ | Lista de módulos requeridos; cada módulo puede especificar restricciones de versión (`version`), implementación del proveedor (`provider`) y configuración (`config`) |
 | `protocols` | array | ✅ | Lista de protocolos requeridos; cada protocolo puede especificar versión y configuración |
 | `controlMode` | string | ✅ | Modo de control: `command` / `ego` / `autonomous` |
@@ -145,4 +146,4 @@ Después de la resolución de dependencias, el sistema determina la fase de iFay
 
 - [iFACTS](./14-iFACTS) — Pruebas de conformidad
 - [Hoja de ruta](./04-Hoja-de-ruta) — Configuración por fases
-- [Hub de controladores](./12.1-Hub-de-controladores) — Configuración de controladores
+- [Hub de controladores](./12-Capa-Cognición-Habilidades#121-hub-de-controladores) — Configuración de controladores

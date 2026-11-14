@@ -24,6 +24,7 @@ FayManifest uses JSON format and contains the following fields:
 | `version` | string | ✅ | Version number |
 | `description` | string | ✅ | Functional description |
 | `vendor` | string | ✅ | Developer/vendor name |
+| `fayId` | string | ❌ | Optional iFay identity reference (format defined authoritatively by the FayID specification; when omitted, identity infrastructure is supplemented during assembly) |
 | `modules` | array | ✅ | List of required modules; each module can specify version constraints (`version`), vendor implementation (`provider`), and configuration (`config`) |
 | `protocols` | array | ✅ | List of required protocols; each protocol can specify version and configuration |
 | `controlMode` | string | ✅ | Control mode: `command` / `ego` / `autonomous` |
@@ -152,7 +153,7 @@ The above Manifest only declares 4 modules and 2 protocols, but the system autom
 | Ego Model | Automatically added because `ego` configuration was declared |
 | Faying Protocol | Required secure pairing protocol for all iFay |
 
-Ultimately, this drone control iFay actually contains 12 components and 3 protocols — but the developer only needs to care about the parts related to drone business.
+Ultimately, this drone control iFay resolves to 11 module components (4 explicitly declared business modules + 7 auto-supplemented infrastructure modules including the Ego Model) and 3 protocols (2 explicitly declared business protocols + 1 auto-supplemented Faying Protocol) — while the developer only needs to focus on the drone-specific configuration.
 
 ---
 
@@ -190,4 +191,4 @@ Each phase has its Minimum Component Set. When developers claim support for a ph
 
 - [iFACTS](./14-iFACTS) — Conformance testing
 - [Roadmap](./04-Roadmap) — Phase configuration
-- [Device Driver Hub](./12.1-Device-Driver-Hub) — Driver configuration
+- [Device Driver Hub](./12-Cognition-Layer-Skills#121-device-driver-hub) — Driver configuration
