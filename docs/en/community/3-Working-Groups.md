@@ -19,7 +19,7 @@ Responsible for the identity system, corresponding to the independent FayID proj
 Responsible for the personalization model, corresponding to the independent Ego project. Scope includes:
 
 - Ego model training, deployment, and switching mechanisms
-- Host personality trait collection and alignment
+- Human Prime personality trait collection and alignment
 - Multi-version Ego management and personality switching
 
 ### WG-Protocols
