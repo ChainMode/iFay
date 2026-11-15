@@ -15,6 +15,10 @@
 !.gitignore
 !README.md
 !LICENSE
+!LICENSE-DOCS
+!SECURITY.md
+!CONTRIBUTING.md
+!CODE_OF_CONDUCT.md
 !package.json
 
 # Still ignore common build/dependency artifacts and OS noise within tracked dirs

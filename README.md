@@ -114,7 +114,7 @@ node packages/ifacts-harness/bin/ifacts.mjs --self-test
 
 ### Contributing
 We welcome contributions in all forms!
-Whether you’re fixing bugs, improving documentation, or suggesting new features, please refer to our Contribution Guide to get started.
+Whether you’re fixing bugs, improving documentation, or suggesting new features, please refer to our [Contribution Guide](./CONTRIBUTING.md), [Security Policy](./SECURITY.md), and [Code of Conduct](./CODE_OF_CONDUCT.md) to get started.
 
 <br>
 
@@ -135,4 +135,12 @@ Whether you’re fixing bugs, improving documentation, or suggesting new feature
 5. iFay can communicate via the Telepathy Protocol for higher efficiency and accuracy.
 
 <br>
+
+## License
+
+This repository uses a dual-track open-source license (`Copyright (c) 2025-2026 ChainMode contributors`):
+
+- **Code, Schemas, Fixtures & Workspace Packages** (`packages/`, `schema/`, `releases/`): Licensed under the **MIT License** — see [LICENSE](./LICENSE).
+- **Specifications, Blueprints & Tutorials** (`docs/`): Licensed under **Creative Commons Attribution 4.0 International (CC BY 4.0)** — see [LICENSE-DOCS](./LICENSE-DOCS).
+
 
