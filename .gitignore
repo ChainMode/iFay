@@ -1,20 +1,39 @@
 # Ignore everything
 *
 
-# But not these directories
+# But not these directories and workspace packages
 !docs/
 !docs/**
 !releases/
 !releases/**
 !schema/
 !schema/**
+!packages/
+!packages/**
 
-# And not these essential files
+# And not these essential root files
 !.gitignore
 !README.md
 !LICENSE
+!package.json
 
-# Still ignore common artifacts within tracked dirs
-docs/**/.DS_Store
-releases/**/.DS_Store
-schema/**/.DS_Store
+# Still ignore common build/dependency artifacts and OS noise within tracked dirs
+node_modules/
+**/node_modules/
+**/node_modules/**
+dist/
+**/dist/
+**/dist/**
+*.tsbuildinfo
+**/*.tsbuildinfo
+.DS_Store
+**/.DS_Store
+
+# Process tools & internal governance MUST NEVER enter Git (GOV-05)
+openspec/
+.kiro/
+.dev-os/
+.cursor/
+.githooks/
+decisions/
+AGENTS.md

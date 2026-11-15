@@ -3,8 +3,35 @@
 ![](https://github.com/user-attachments/assets/2cd8f495-58a3-4085-a38b-164d2edfc586)
 
 
-iFay (Individual Fay) is an AI avatar that integrates the user's human personality and digital capabilities. 
+iFay (Individual Fay) is an AI avatar that integrates a Human Prime's personality traits and digital capabilities.
 
+<br>
+
+### Official SDK & Conformance Suite
+
+This umbrella repository hosts the authoritative `FayManifest` schema alongside the zero-dependency reference SDK and progressive conformance harness (requires **Node.js `>= 20.0.0`**):
+
+| Package / Directory | Description |
+|---------------------|-------------|
+| [`packages/ifay-sdk`](./packages/ifay-sdk/README.md) (`@ifay/sdk`) | Official zero-dependency SDK for `FayID` (RFC 4648 lowercase no-pad Base32 + HKDF-SHA256 subkeys + Ed25519 Holder-of-Key + RFC 8785 JCS), `Faying 1.0` Mandate envelopes, `FayManifest` builder/validator, `CAP 1.0` `D-1..D-7` client safety gate, `SSP 1.0` Detached Ed25519 JWS `SkillProof`, `DTP 1.0` AES-256-GCM frames, and `Ego` two-tier Vault verification |
+| [`packages/ifacts-harness`](./packages/ifacts-harness/README.md) (`@ifay/ifacts`) | Runnable **iFACTS** conformance suite enforcing the progressive `L1 → L2 → L3` gate (`blocked_by_previous_level`), explicit `coFay` / `coFACTS` scope separation, SHA-256 hash-chained E2E lifecycle verification, `iFay Ready` (`None` / `Bronze` / `Silver` / `Gold`) certification, and `ifacts-report/1.0` output |
+| [`schema/faymanifest`](./schema/faymanifest/) | Authoritative JSON Schema (`faymanifest.schema.json`) and validated reference fixtures for declarative iFay assembly |
+
+```bash
+# Run all unit/integration tests (@ifay/sdk + @ifay/ifacts + FayManifest fixtures)
+npm test
+
+# Run the progressive L1 -> L2 -> L3 iFACTS conformance self-test
+node packages/ifacts-harness/bin/ifacts.mjs --self-test
+```
+
+#### Quickstart & Engineering Documentation
+- **Tutorials**:
+  - [Build and Verify a Local iFay Client Node in 15 Minutes](./docs/en/tutorials/building-a-client-node.md) ([中文](./docs/zh-CN/tutorials/building-a-client-node.md))
+  - [Bridging MCP and LLM Tools Safely into the iFay Protocol Stack](./docs/en/tutorials/building-mcp-with-llms.md) ([中文](./docs/zh-CN/tutorials/building-mcp-with-llms.md))
+- **Roadmap & Specification Governance**:
+  - [Ecosystem Roadmap and Engineering Milestones](./docs/en/development/roadmap.md) ([中文](./docs/zh-CN/development/roadmap.md))
+  - [Versioning and Edition Freeze Discipline (`MAJOR.MINOR`)](./docs/en/specification/versioning.md) ([中文](./docs/zh-CN/specification/versioning.md))
 
 <br>
 

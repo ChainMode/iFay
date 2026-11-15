@@ -99,7 +99,7 @@ iFay supports managing seven credential types: FayID, account passwords, certifi
 
 ### Related Documents
 
-- [Aligned Consciousness](./11.3-Aligned-Consciousness) — Aligned Consciousness
-- [Personal Data Heap](./11.1-Personal-Data-Heap) — Personal Data Heap
-- [Credentials Management](./8.1-Credentials-Management) — Credentials Management
+- [Aligned Consciousness](./11-Cognition-Layer-Thinking#113-aligned-consciousness) — Aligned Consciousness
+- [Personal Data Heap](./11-Cognition-Layer-Thinking#111-personal-data-heap) — Personal Data Heap
+- [Credentials Management](./08-Social-Layer#82-social-permissions) — Credentials Management
 - [iFay Profile](./07-iFay-Profile) — iFay Profile

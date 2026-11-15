@@ -101,7 +101,7 @@ After the guardian takes over, they can choose to continue interacting with the 
 ### Related Documents
 
 - [iFay Profile](./07-iFay-Profile) — Guardianship relationship records
-- [Credential Management](./8.1-Credentials-Management) — Credential revocation
+- [Credential Management](./08-Social-Layer#82-social-permissions) — Credential revocation
 
 ---
 

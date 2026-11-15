@@ -4,7 +4,7 @@ iFay Profile is iFay's complete "identity card" — a semantically interpretable
 
 The Human Prime profile (Aligned Consciousness) is a subset and input source of the iFay Profile. The Human Prime profile describes "what kind of person the Human Prime is," while the iFay Profile describes "what kind of entity this iFay is" — it includes the Prime's personality traits, but also iFay's own independent attributes such as skills, hardware, and permissions.
 
-The Human Prime profile is maintained by the [Aligned Consciousness](./11.3-Aligned-Consciousness) module. The skills dimension is managed by [Registered Skill](./12.2-Registered-Skill), the hardware dimension by [Device Driver Hub](./12.1-Device-Driver-Hub), and the permissions dimension by [Credentials Management](./8.1-Credentials-Management).
+The Human Prime profile is maintained by the [Aligned Consciousness](./11-Cognition-Layer-Thinking#113-aligned-consciousness) module. The skills dimension is managed by [Registered Skill](./12-Cognition-Layer-Skills#122-registered-skill), the hardware dimension by [Device Driver Hub](./12-Cognition-Layer-Skills#121-device-driver-hub), and the permissions dimension by [Credentials Management](./08-Social-Layer#82-social-permissions).
 
 ---
 

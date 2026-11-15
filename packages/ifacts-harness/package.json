@@ -1,0 +1,30 @@
+{
+  "name": "@ifay/ifacts",
+  "version": "0.1.0",
+  "description": "Zero-dependency iFACTS L1-L3 progressive conformance test harness, coFACTS boundary guard, iFay Ready tier evaluator, and ifacts-report/1.0 generator",
+  "type": "module",
+  "main": "./src/index.mjs",
+  "types": "./src/index.d.ts",
+  "bin": {
+    "ifacts": "./bin/ifacts.mjs"
+  },
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.mjs"
+    }
+  },
+  "files": [
+    "src/",
+    "bin/",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node --test tests/ifacts-harness.test.mjs",
+    "self-test": "node bin/ifacts.mjs --self-test"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "license": "MIT"
+}

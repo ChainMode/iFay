@@ -1,0 +1,25 @@
+{
+  "name": "@ifay/sdk",
+  "version": "0.1.0",
+  "description": "Zero-dependency official iFay client SDK: FayID crypto & HKDF subkeys, Faying 1.0 Mandate helpers, FayManifest builder/validator, CAP 1.0 D-1..D-7 safety gate, and SSP 1.0 Detached Ed25519 JWS proofs",
+  "type": "module",
+  "main": "./src/index.mjs",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.mjs"
+    }
+  },
+  "files": [
+    "src/",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node --test tests/ifay-sdk.test.mjs"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "license": "MIT"
+}
