@@ -296,4 +296,4 @@ node packages/ifacts-harness/bin/ifacts.mjs \
 
 - Continue to [Bridging MCP and LLM Tools Safely into the iFay Protocol Stack](./building-mcp-with-llms.md) to wrap external MCP tools with `SSP 1.0` `SkillProof` signatures, `ICP 1.0` `.ctx` consent blocks, and `CAP 1.0` gates.
 - Explore the full API documentation in [`packages/ifay-sdk/README.md`](../../../packages/ifay-sdk/README.md) and [`packages/ifacts-harness/README.md`](../../../packages/ifacts-harness/README.md).
-- [Online Documentation (English)](https://ifay.ai/en/docs/tutorials/building-a-client-node)
+- [Online Documentation (English)](https://ifay.ai/en/docs/iFay/tutorials/building-a-client-node)

@@ -80,4 +80,4 @@ Implementers should distinguish **protocol wire versions** from **declarative ma
 - [Blueprint 13: FayManifest Declarative Assembly](../blueprint/13-FayManifest.md)
 - [Blueprint 14: iFACTS Conformance Verification](../blueprint/14-iFACTS.md)
 - [SEP Guidelines](../community/2-SEP-Guidelines.md)
-- [Online Documentation (English)](https://ifay.ai/en/docs/specification/versioning)
+- [Online Documentation (English)](https://ifay.ai/en/docs/iFay/specification/versioning)

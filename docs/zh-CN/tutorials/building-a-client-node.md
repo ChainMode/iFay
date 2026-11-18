@@ -295,4 +295,4 @@ node packages/ifacts-harness/bin/ifacts.mjs \
 
 - 继续阅读[《实战指南：将 MCP 与大语言模型工具安全桥接至 iFay 协议栈》](./building-mcp-with-llms.md)，学习如何为外部 LLM/MCP 工具签发 `SSP 1.0` 技能证明并结合 `ICP 1.0` 与 `CAP 1.0` 构建纵深安全防线。
 - 查阅 [`packages/ifay-sdk/README.md`](../../../packages/ifay-sdk/README.md) 与 [`packages/ifacts-harness/README.md`](../../../packages/ifacts-harness/README.md) 获取完整 API 参考。
-- [在线文档入口（中文）](https://ifay.ai/zh-CN/docs/tutorials/building-a-client-node)
+- [在线文档入口（中文）](https://ifay.ai/zh-CN/docs/iFay/tutorials/building-a-client-node)

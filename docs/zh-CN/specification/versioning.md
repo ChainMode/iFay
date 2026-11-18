@@ -80,4 +80,4 @@ iFay 体系内的全部通信与控制协议统一采用**两段式 `MAJOR.MINOR
 - [蓝图 13：FayManifest 声明式组装](../blueprint/13-FayManifest声明式组装.md)
 - [蓝图 14：iFACTS 合规性验证](../blueprint/14-iFACTS合规性验证.md)
 - [SEP 规范增强提案指南](../community/2-SEP规范增强提案指南.md)
-- [在线文档入口（中文）](https://ifay.ai/zh-CN/docs/specification/versioning)
+- [在线文档入口（中文）](https://ifay.ai/zh-CN/docs/iFay/specification/versioning)

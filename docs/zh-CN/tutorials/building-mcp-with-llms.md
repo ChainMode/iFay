@@ -270,4 +270,4 @@ console.log('CAP 门禁最终判定 :', gateDecision);
 - [蓝图 09：交互层 - 感知（含交互内容协议 ICP）](../blueprint/09-交互层-感知.md)
 - [蓝图 10：交互层 - 动作（含控制权限协议 CAP）](../blueprint/10-交互层-动作.md)
 - [蓝图 12：认知层 - 技能（含技能共享协议 SSP）](../blueprint/12-认知层-技能.md)
-- [在线文档入口（中文）](https://ifay.ai/zh-CN/docs/tutorials/building-mcp-with-llms)
+- [在线文档入口（中文）](https://ifay.ai/zh-CN/docs/iFay/tutorials/building-mcp-with-llms)

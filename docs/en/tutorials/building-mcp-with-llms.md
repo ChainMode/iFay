@@ -270,4 +270,4 @@ Before deploying an MCP or LLM tool bridge in production, verify every item belo
 - [Blueprint 09: Interaction Layer – Perception (including ICP)](../blueprint/09-Interaction-Layer-Perception.md)
 - [Blueprint 10: Interaction Layer – Action (including CAP)](../blueprint/10-Interaction-Layer-Action.md)
 - [Blueprint 12: Cognition Layer – Skills (including SSP)](../blueprint/12-Cognition-Layer-Skills.md)
-- [Online Documentation (English)](https://ifay.ai/en/docs/tutorials/building-mcp-with-llms)
+- [Online Documentation (English)](https://ifay.ai/en/docs/iFay/tutorials/building-mcp-with-llms)

@@ -68,4 +68,4 @@ iFay 采用**渐进式采纳（Progressive Adoption）**策略：每一阶段都
 - [蓝图 14：iFACTS 合规性验证](../blueprint/14-iFACTS合规性验证.md)
 - [规范：版本管理与兼容性规范](../specification/versioning.md)
 - [教程：15 分钟构建并验证本地 iFay 客户端节点](../tutorials/building-a-client-node.md)
-- [在线文档入口（中文）](https://ifay.ai/zh-CN/docs/development/roadmap)
+- [在线文档入口（中文）](https://ifay.ai/zh-CN/docs/iFay/development/roadmap)

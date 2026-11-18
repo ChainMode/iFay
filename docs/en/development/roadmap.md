@@ -68,4 +68,4 @@ Focused on operationalizing Phase 1 and Phase 2 while freezing Phase 3 interoper
 - [Blueprint 14: iFACTS Conformance Verification](../blueprint/14-iFACTS.md)
 - [Specification: Versioning and Edition Freeze Discipline](../specification/versioning.md)
 - [Tutorial: Build and Verify a Local iFay Client Node in 15 Minutes](../tutorials/building-a-client-node.md)
-- [Online Documentation (English)](https://ifay.ai/en/docs/development/roadmap)
+- [Online Documentation (English)](https://ifay.ai/en/docs/iFay/development/roadmap)
