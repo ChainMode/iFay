@@ -8,7 +8,7 @@ import {
   sign,
   verify,
 } from 'node:crypto';
-import { readFileSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 
 const RFC4648_ALPHABET = 'abcdefghijklmnopqrstuvwxyz234567';
@@ -19,6 +19,9 @@ const ED25519_SPKI_PREFIX = Buffer.from('302a300506032b6570032100', 'hex');
 
 const FAYMANIFEST_SCHEMA_PATH = fileURLToPath(
   new URL('../../../schema/faymanifest/faymanifest.schema.json', import.meta.url),
+);
+const PACKAGED_FAYMANIFEST_SCHEMA_PATH = fileURLToPath(
+  new URL('../dist/faymanifest.schema.json', import.meta.url),
 );
 let cachedFayManifestSchema = null;
 
@@ -655,7 +658,10 @@ export function toCapMandateBinding(mandate, resourceId, options = {}) {
 
 export function loadFayManifestSchema() {
   if (!cachedFayManifestSchema) {
-    cachedFayManifestSchema = JSON.parse(readFileSync(FAYMANIFEST_SCHEMA_PATH, 'utf8'));
+    const schemaPath = existsSync(FAYMANIFEST_SCHEMA_PATH)
+      ? FAYMANIFEST_SCHEMA_PATH
+      : PACKAGED_FAYMANIFEST_SCHEMA_PATH;
+    cachedFayManifestSchema = JSON.parse(readFileSync(schemaPath, 'utf8'));
   }
   return cachedFayManifestSchema;
 }

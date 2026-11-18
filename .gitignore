@@ -14,19 +14,28 @@
 # And not these essential root files
 !.gitignore
 !README.md
+!PUBLISHING.md
 !LICENSE
 !LICENSE-DOCS
 !SECURITY.md
 !CONTRIBUTING.md
 !CODE_OF_CONDUCT.md
 !package.json
+!package-lock.json
 
-# Allowlist ONLY the ecosystem Documentation & Link Integrity CI workflow
+# Allowlist public GitHub workflows and community templates
 !.github/
 .github/*
 !.github/workflows/
 .github/workflows/*
 !.github/workflows/docs-ci.yml
+!.github/workflows/ci.yml
+!.github/ISSUE_TEMPLATE/
+.github/ISSUE_TEMPLATE/*
+!.github/ISSUE_TEMPLATE/bug_report.yml
+!.github/ISSUE_TEMPLATE/feature_request.yml
+!.github/ISSUE_TEMPLATE/config.yml
+!.github/pull_request_template.md
 
 # Still ignore common build/dependency artifacts and OS noise within tracked dirs
 node_modules/
@@ -46,5 +55,6 @@ openspec/
 .dev-os/
 .cursor/
 .githooks/
+.iaccord/
 decisions/
 AGENTS.md

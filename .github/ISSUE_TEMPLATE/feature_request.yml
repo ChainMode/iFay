@@ -1,0 +1,36 @@
+name: Feature or Specification Proposal
+description: Propose an enhancement to @ifay/sdk, @ifay/ifacts, @ifay/mcp-server, or umbrella documentation.
+title: "[Feat]: "
+labels: ["enhancement"]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Target Area
+      options:
+        - "@ifay/sdk"
+        - "@ifay/ifacts"
+        - "@ifay/mcp-server"
+        - "FayManifest Schema"
+        - "Documentation & Tutorials"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement
+      description: What developer workflow, safety requirement, or interoperability need does this address?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed Solution
+      description: Describe the API, CLI flag, MCP tool behavior, or documentation improvement.
+    validations:
+      required: true
+  - type: textarea
+    id: compatibility
+    attributes:
+      label: Protocol & Conformance Impact
+      description: Note whether this affects frozen 1.0 schemas/vectors or belongs in a sibling protocol repository.

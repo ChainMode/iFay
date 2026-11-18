@@ -1,0 +1,38 @@
+name: Workspace Build, SDK, iFACTS & MCP CI
+
+on:
+  push:
+    branches: [main, production]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Build, Test, Demo & Pack (Node 20)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install workspace dependencies
+        run: npm ci
+
+      - name: Build workspace packages
+        run: npm run build
+
+      - name: Run SDK, iFACTS, MCP server & schema fixture tests
+        run: npm test
+
+      - name: Run interactive cryptographic walkthrough (ifay-demo)
+        run: npm run demo
+
+      - name: Verify npm pack dry-run across all workspaces
+        run: npm pack --dry-run --workspaces

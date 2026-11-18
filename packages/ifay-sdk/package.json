@@ -1,22 +1,52 @@
 {
   "name": "@ifay/sdk",
   "version": "0.1.0",
-  "description": "Zero-dependency official iFay client SDK: FayID crypto & HKDF subkeys, Faying 1.0 Mandate helpers, FayManifest builder/validator, CAP 1.0 D-1..D-7 safety gate, and SSP 1.0 Detached Ed25519 JWS proofs",
+  "description": "Zero-dependency official iFay client SDK: FayID crypto & HKDF subkeys, Faying 1.0 Mandate helpers, FayManifest builder/validator, CAP 1.0 D-1..D-7 safety gate, SSP 1.0 Detached Ed25519 JWS proofs, and ifay-demo CLI",
   "type": "module",
   "main": "./src/index.mjs",
   "types": "./src/index.d.ts",
+  "bin": {
+    "ifay-demo": "./dist/cli.js"
+  },
   "exports": {
     ".": {
       "types": "./src/index.d.ts",
       "import": "./src/index.mjs"
-    }
+    },
+    "./demo": "./src/demo.mjs"
   },
   "files": [
     "src/",
+    "dist/",
     "README.md"
   ],
   "scripts": {
-    "test": "node --test tests/ifay-sdk.test.mjs"
+    "build": "node scripts/build.mjs",
+    "prepack": "npm run build",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChainMode/iFay.git",
+    "directory": "packages/ifay-sdk"
+  },
+  "homepage": "https://ifay.ai",
+  "bugs": {
+    "url": "https://github.com/ChainMode/iFay/issues"
+  },
+  "keywords": [
+    "ifay",
+    "fayid",
+    "faymanifest",
+    "faying-protocol",
+    "control-authority-protocol",
+    "skill-sharing-protocol",
+    "ed25519",
+    "ai-agents",
+    "agent-safety"
+  ],
+  "publishConfig": {
+    "access": "public"
   },
   "engines": {
     "node": ">=20.0.0"

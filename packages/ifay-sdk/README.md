@@ -69,8 +69,19 @@ const mandate = createFayingMandate(
 console.log(verifyFayingMandate(mandate, { trustedIssuerPublicKeyHex: humanPrime.publicKeyHex }));
 ```
 
+## Interactive Walkthrough CLI (`ifay-demo`)
+
+```bash
+# Human-readable 4-step cryptographic walkthrough (< 1 second)
+npx ifay-demo
+
+# Machine-readable JSON output
+npx ifay-demo --json
+```
+
 ## Running Tests
 
 ```bash
-node --test packages/ifay-sdk/tests/ifay-sdk.test.mjs
+npm run build --workspace=@ifay/sdk
+node --test packages/ifay-sdk/tests/*.test.mjs
 ```

@@ -41,6 +41,20 @@ jobs:
             .map((s) => s.trim())
             .filter(Boolean);
 
+          const trackedSet = new Set(trackedAll);
+          const trackedDirs = new Set();
+          for (const f of trackedAll) {
+            const parts = f.split("/");
+            for (let i = 1; i < parts.length; i++) {
+              trackedDirs.add(parts.slice(0, i).join("/"));
+            }
+          }
+          function existsInClone(absPath) {
+            const rel = path.relative(repoRoot, absPath).split(path.sep).join("/");
+            if (rel.startsWith("..")) return false;
+            return trackedSet.has(rel) || trackedDirs.has(rel);
+          }
+
           const errors = [];
 
           // 1. Markdown/MDX Structural Lint, Non-Empty Stub Gate & Relative Link Gate
@@ -152,7 +166,7 @@ jobs:
 
             const nonCodeLines = stripCodeAndCheckStructure(raw, relFile);
 
-            // Relative link & image resolution
+            // Relative link & image resolution (checked strictly against Git-tracked set)
             for (let idx = 0; idx < nonCodeLines.length; idx++) {
               const line = nonCodeLines[idx];
               const linkRe = /!?\[[^\]]*\]\(([^)\n]+)\)/g;
@@ -190,7 +204,7 @@ jobs:
                   path.join(resolved, "README.md"),
                   path.join(resolved, "index.md"),
                 ];
-                if (!candidates.some((c) => fs.existsSync(c))) {
+                if (!candidates.some((c) => existsInClone(c))) {
                   errors.push(
                     `${relFile}:${idx + 1} broken relative link '${target}'`
                   );
@@ -216,10 +230,9 @@ jobs:
           }
 
           // 2. Multilingual Baseline Parity Gate
-          const docsDir = path.join(repoRoot, "docs");
-          if (fs.existsSync(docsDir)) {
+          if (trackedDirs.has("docs")) {
             const blueprintLocales = LOCALES.filter((loc) =>
-              fs.existsSync(path.join(docsDir, loc, "blueprint"))
+              trackedDirs.has(`docs/${loc}/blueprint`)
             );
             if (blueprintLocales.length > 0) {
               for (const requiredPrimary of ["zh-CN", "en"]) {
@@ -231,7 +244,7 @@ jobs:
               }
             }
             const startLocales = LOCALES.filter((loc) =>
-              fs.existsSync(path.join(docsDir, loc, "start.md"))
+              trackedSet.has(`docs/${loc}/start.md`)
             );
             if (startLocales.length > 0 && startLocales.length !== LOCALES.length) {
               errors.push(

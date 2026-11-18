@@ -23,6 +23,29 @@
     "test": "node --test tests/ifacts-harness.test.mjs",
     "self-test": "node bin/ifacts.mjs --self-test"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChainMode/iFay.git",
+    "directory": "packages/ifacts-harness"
+  },
+  "homepage": "https://ifay.ai",
+  "bugs": {
+    "url": "https://github.com/ChainMode/iFay/issues"
+  },
+  "keywords": [
+    "ifay",
+    "ifacts",
+    "conformance",
+    "faymanifest",
+    "fayid",
+    "cap",
+    "dtp",
+    "ssp",
+    "agent-safety"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "engines": {
     "node": ">=20.0.0"
   },

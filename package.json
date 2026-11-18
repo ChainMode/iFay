@@ -2,14 +2,31 @@
   "name": "ifay-umbrella-workspace",
   "version": "0.1.0",
   "private": true,
-  "description": "iFay umbrella specification, authoritative FayManifest schema, official @ifay/sdk, and @ifay/ifacts conformance harness",
+  "description": "iFay umbrella specification, authoritative FayManifest schema, official @ifay/sdk, @ifay/ifacts conformance harness, and @ifay/mcp-server",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChainMode/iFay.git"
+  },
+  "homepage": "https://ifay.ai",
+  "bugs": {
+    "url": "https://github.com/ChainMode/iFay/issues"
+  },
   "workspaces": [
-    "packages/*"
+    "packages/ifay-sdk",
+    "packages/ifacts-harness",
+    "packages/mcp-server"
   ],
   "scripts": {
-    "test": "node --test packages/ifay-sdk/tests/ifay-sdk.test.mjs packages/ifacts-harness/tests/ifacts-harness.test.mjs && node schema/faymanifest/generator/validate-fixtures.mjs",
+    "build": "npm run build --workspace=@ifay/sdk && npm run build --workspace=@ifay/mcp-server",
+    "prepare": "npm run build",
+    "demo": "node packages/ifay-sdk/dist/cli.js",
+    "test": "npm run build && node --test packages/ifay-sdk/tests/*.test.mjs packages/ifacts-harness/tests/*.test.mjs packages/mcp-server/test/*.test.js && node schema/faymanifest/generator/validate-fixtures.mjs",
     "ifacts:self-test": "node packages/ifacts-harness/bin/ifacts.mjs --self-test"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.0",
+    "typescript": "^5.7.0"
   },
   "engines": {
     "node": ">=20.0.0"

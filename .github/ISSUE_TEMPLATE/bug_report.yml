@@ -1,0 +1,46 @@
+name: Bug Report
+description: Report a bug in @ifay/sdk, @ifay/ifacts, @ifay/mcp-server, FayManifest schemas, or specifications.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting an issue in **iFay**! For security vulnerabilities, do **not** open a public issue — please follow [`SECURITY.md`](https://github.com/ChainMode/iFay/blob/main/SECURITY.md).
+  - type: dropdown
+    id: component
+    attributes:
+      label: Affected Package / Area
+      options:
+        - "@ifay/sdk (packages/ifay-sdk)"
+        - "@ifay/ifacts (packages/ifacts-harness)"
+        - "@ifay/mcp-server (packages/mcp-server)"
+        - "FayManifest Schema & Fixtures (schema/faymanifest)"
+        - "Blueprint & Specification Docs (docs/)"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: Clear summary of what happened vs. what was expected.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Minimal Reproduction Steps
+      description: Commands, input JSON/vectors, or code snippet to reproduce the issue.
+      placeholder: |
+        1. Run `npm test` or `node ...`
+        2. Pass input `...`
+        3. Observe error `...`
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Node.js & OS Version
+      placeholder: "Node.js v20.x / macOS 15 / Ubuntu 24.04"
+    validations:
+      required: true

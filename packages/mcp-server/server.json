@@ -1,0 +1,21 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
+  "name": "io.github.chainmode/ifay-mcp-server",
+  "description": "Zero-dependency MCP safety gate and cryptographic validator for FayID, FayManifest, CAP 1.0 mandates, and SSP 1.0 skill descriptors.",
+  "version": "0.1.0",
+  "repository": {
+    "url": "https://github.com/ChainMode/iFay",
+    "source": "github",
+    "subfolder": "packages/mcp-server"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@ifay/mcp-server",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}

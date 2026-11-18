@@ -1,0 +1,58 @@
+{
+  "name": "@ifay/mcp-server",
+  "version": "0.1.0",
+  "description": "Zero-dependency Model Context Protocol (MCP) stdio server for iFay: FayID validation, FayManifest validation, CAP 1.0 host/tool safety gate evaluation, and SSP 1.0 Ed25519 skill descriptor verification",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "ifay-mcp-server": "./dist/cli.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist/",
+    "server.json",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json && node -e \"import('node:fs').then(f=>f.chmodSync('dist/cli.js',0o755))\"",
+    "prepack": "npm run build",
+    "test": "node --test test/mcp-server.test.js"
+  },
+  "dependencies": {
+    "@ifay/sdk": "^0.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChainMode/iFay.git",
+    "directory": "packages/mcp-server"
+  },
+  "homepage": "https://ifay.ai",
+  "bugs": {
+    "url": "https://github.com/ChainMode/iFay/issues"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "ifay",
+    "fayid",
+    "faymanifest",
+    "cap",
+    "ssp",
+    "ai-safety",
+    "agent-authorization",
+    "ed25519"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "license": "MIT"
+}
