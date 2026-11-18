@@ -1,0 +1,27 @@
+# iFay Umbrella Schema (`draft`)
+
+Working-draft schema entry point synchronized with the authoritative **iFay** `FayManifest` JSON Schema Draft 2020-12 specification (`2025-10-25` baseline).
+
+## Authoritative Artifacts
+
+- **Canonical `FayManifest` JSON Schema**: [`../faymanifest/faymanifest.schema.json`](../faymanifest/faymanifest.schema.json) (`$id: "https://ifay.ai/schema/faymanifest/faymanifest.schema.json"`, `urn:ifay:schema:faymanifest:v1.0.0`)
+- **Published `2025-10-25` Schema Overview**: [`../2025-10-25/schema.mdx`](../2025-10-25/schema.mdx)
+- **Example Manifests**: [`../faymanifest/examples/minimal.faymanifest.json`](../faymanifest/examples/minimal.faymanifest.json), [`../faymanifest/examples/drone-controller.faymanifest.json`](../faymanifest/examples/drone-controller.faymanifest.json)
+- **SDK & Conformance Harness**: [`../../packages/ifay-sdk/README.md`](../../packages/ifay-sdk/README.md), [`../../packages/ifacts-harness/README.md`](../../packages/ifacts-harness/README.md)
+
+## Top-Level Manifest Model
+
+All `FayManifest` declarations conform to [`../faymanifest/faymanifest.schema.json`](../faymanifest/faymanifest.schema.json):
+
+- **Schema & Package Version (`schemaVersion` / `version`)**: Strict SemVer 2.0.0 `version` paired with JSON Schema Draft 2020-12 (`urn:ifay:schema:faymanifest:v1.0.0`), plus required `name`, `description`, and `vendor`.
+- **Accountability Identity (`fayId`)**: Optional non-empty string delegated to `FayID` (`ifay_` / `cofay_`), bound to an accountable `Human Prime` or organization at assembly time.
+- **Autonomy & Stage (`controlMode` / resolved `phase`)**: Required `controlMode` (`"command"`, `"ego"`, or `"autonomous"`), with cumulative `Phase 1`–`Phase 5` stage requirements enforced by `@ifay/ifacts`.
+- **Declarative Components (`components`)**: Required `modules[]` and `protocols[]` arrays (`^[a-z][a-z0-9_]*$`), plus optional `drivers[]` (`@scope/name`), `ego` model constraints, and `permissions` scopes.
+
+## Validation Commands
+
+```bash
+node schema/faymanifest/generator/generate.mjs --check
+node schema/faymanifest/generator/validate-fixtures.mjs
+npm test
+```

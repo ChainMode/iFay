@@ -1,0 +1,32 @@
+# iFay Umbrella Schema (`2025-10-25`)
+
+Authoritative machine-readable schema overview for the **iFay** umbrella specification (`2025-10-25` edition), anchored by the canonical `FayManifest` JSON Schema Draft 2020-12 definition.
+
+## Authoritative Artifacts
+
+- **Canonical `FayManifest` JSON Schema**: [`../faymanifest/faymanifest.schema.json`](../faymanifest/faymanifest.schema.json) (`$id: "https://ifay.ai/schema/faymanifest/faymanifest.schema.json"`, `urn:ifay:schema:faymanifest:v1.0.0`)
+- **Minimal & Reference Manifest Fixtures**: [`../faymanifest/examples/minimal.faymanifest.json`](../faymanifest/examples/minimal.faymanifest.json), [`../faymanifest/examples/drone-controller.faymanifest.json`](../faymanifest/examples/drone-controller.faymanifest.json)
+- **Official TypeScript / ESM SDK & Conformance Harness**: [`../../packages/ifay-sdk/README.md`](../../packages/ifay-sdk/README.md), [`../../packages/ifacts-harness/README.md`](../../packages/ifacts-harness/README.md)
+- **Normative Blueprint Reference**: [`../../docs/en/blueprint/13-FayManifest.md`](../../docs/en/blueprint/13-FayManifest.md)
+
+## Top-Level Structure & Umbrella Dimensions
+
+`FayManifest` serves as the declarative `package.json` of an `iFay` instance (`additionalProperties: false`):
+
+| Umbrella Dimension | JSON Schema Field(s) | Requirement & Semantics |
+| --- | --- | --- |
+| `schemaVersion` / Edition | `version` (`semver`) & `$schema` | SemVer 2.0.0 manifest release version validated against Draft 2020-12 (`urn:ifay:schema:faymanifest:v1.0.0`). |
+| `fayId` | `fayId` (optional `string`) | Canonical accountability identifier (`ifay_<base32>` or `cofay_<base32>`) governed by the `FayID` specification; auto-provisioned during `FayGer` assembly when omitted. |
+| `phase` & Control Mode | `controlMode` (`"command" \| "ego" \| "autonomous"`) | Execution autonomy boundary; progressive conformance `phase` (`Phase 1`–`Phase 5`) is deterministically resolved from declared components by `@ifay/sdk` and `@ifay/ifacts`. |
+| `components` | `modules`, `protocols`, `drivers`, `ego`, `permissions` | Required `modules[]` and `protocols[]` (`snake_case` `componentId` + SemVer range), plus optional hardware/service `drivers[]` (`@scope/name`), `ego` alignment boundaries, and scoped `permissions`. |
+| Package Metadata | `name`, `description`, `vendor` | Required non-empty human-readable identity and publisher metadata for the assembled `Fay` package. |
+
+## Generation & Fixture Validation
+
+Run the zero-dependency generator check and fixture validator from the repository root:
+
+```bash
+node schema/faymanifest/generator/generate.mjs --check
+node schema/faymanifest/generator/validate-fixtures.mjs
+npm test
+```

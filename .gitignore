@@ -21,6 +21,13 @@
 !CODE_OF_CONDUCT.md
 !package.json
 
+# Allowlist ONLY the ecosystem Documentation & Link Integrity CI workflow
+!.github/
+.github/*
+!.github/workflows/
+.github/workflows/*
+!.github/workflows/docs-ci.yml
+
 # Still ignore common build/dependency artifacts and OS noise within tracked dirs
 node_modules/
 **/node_modules/

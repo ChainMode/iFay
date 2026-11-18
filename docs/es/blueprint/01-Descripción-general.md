@@ -202,9 +202,9 @@ Para esto, necesitamos al menos 3 módulos centrales:
 
 ### Acción
 Piensa en esta capa como el sistema motor de iFay — sus manos, pies, boca, etc. A través de ella, iFay puede controlar hardware y software. Contiene al menos tres módulos:
-- _**[Operación simulada](./10.1-Operación-simulada)**_: Simula las operaciones del humano, asegurando que iFay pueda operar interfaces tradicionales como un humano cuando sea necesario.
-- _**[Invocación de habilidades](./10.2-Invocación-de-habilidades)**_: Activa directamente habilidades específicas o ejecuta tareas, similar a llamadas a funciones o llamadas API.
-- _**[Comportamiento autónomo](./10.3-Comportamiento-autónomo)**_: Representa acciones sin herramientas, como correr o hacer flexiones — análogo a tareas programadas u operaciones activadas por tiempo en el diseño de sistemas.
+- _**[Operación simulada](./10-Capa-Interacción-Acción#101-operación-simulada)**_: Simula las operaciones del humano, asegurando que iFay pueda operar interfaces tradicionales como un humano cuando sea necesario.
+- _**[Invocación de habilidades](./10-Capa-Interacción-Acción#102-invocación-de-habilidades)**_: Activa directamente habilidades específicas o ejecuta tareas, similar a llamadas a funciones o llamadas API.
+- _**[Comportamiento autónomo](./10-Capa-Interacción-Acción#103-comportamiento-autónomo)**_: Representa acciones sin herramientas, como correr o hacer flexiones — análogo a tareas programadas u operaciones activadas por tiempo en el diseño de sistemas.
 
 > 🎯 Escenario: Le pides a iFay que llene un formulario en un sitio web gubernamental anticuado. Este sitio no tiene API, no tiene integración con iFay — no hay problema. El módulo de Operación simulada permite a iFay hacer clic, escribir y enviar como un humano, explorando adaptativamente la interfaz a través de la retroalimentación visual del Rastreador en primera persona. No se necesitan scripts, no se requieren modificaciones al sitio web.
 
@@ -214,14 +214,14 @@ Piensa en esta capa como el sistema motor de iFay — sus manos, pies, boca, etc
 Esta capa define lo que iFay entiende, recuerda, sabe y puede hacer.
 
 ### Pensamiento (Thought)
-Esta capa representa las capacidades cognitivas de iFay. Contiene los datos del Human Prime y los datos personales de iFay como memoria persistente a largo plazo. Sus módulos centrales incluyen [Montón de datos personales](./11.1-Montón-de-datos-personales), [Conocimiento externo](./11.2-Conocimiento-externo) y [Conciencia alineada](./11.3-Conciencia-alineada).
+Esta capa representa las capacidades cognitivas de iFay. Contiene los datos del Human Prime y los datos personales de iFay como memoria persistente a largo plazo. Sus módulos centrales incluyen [Montón de datos personales](./11-Capa-Cognición-Pensamiento#111-montón-de-datos-personales), [Conocimiento externo](./11-Capa-Cognición-Pensamiento#112-conocimiento-externo) y [Conciencia alineada](./11-Capa-Cognición-Pensamiento#113-conciencia-alineada).
 
 También incluye fuentes de conocimiento externo — piensa en estas como información que una persona debería saber pero ha olvidado o nunca aprendió completamente. iFay proporciona mecanismos para recuperar e integrar este conocimiento.
 
 > 🎯 Escenario: Visitaste Kioto hace tres años, tomaste muchas fotos y escribiste algunas notas. Ahora un amigo te pide que recomiendes restaurantes en Kioto, pero no puedes recordar. Tu iFay recuerda — encuentra tus fotos, reseñas y datos de ubicación de entonces en el Montón de datos personales, e incluso tiene en cuenta tus preferencias de gusto actuales para dar recomendaciones actualizadas.
 
 ### Habilidades
-Representa capacidades, experiencia y permisos. Sus módulos centrales incluyen [Hub de controladores](./12.1-Hub-de-controladores), [Habilidades registradas](./12.2-Habilidades-registradas) y [Habilidades internas](./12.3-Habilidades-internas).
+Representa capacidades, experiencia y permisos. Sus módulos centrales incluyen [Hub de controladores](./12-Capa-Cognición-Habilidades#121-hub-de-controladores), [Habilidades registradas](./12-Capa-Cognición-Habilidades#122-habilidades-registradas) y [Habilidades internas](./12-Capa-Cognición-Habilidades#123-habilidades-internas).
 
 Una distinción importante:
 - Habilidad = lo que iFay *puede* hacer

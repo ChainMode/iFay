@@ -4,7 +4,7 @@ Das iFay-Profil ist iFays vollständiger „Personalausweis" — eine semantisch
 
 Das Human-Prime-Profil (Ausgerichtetes Bewusstsein) ist eine Teilmenge und Eingabequelle des iFay-Profils. Das Human-Prime-Profil beschreibt „was für ein Mensch der Human Prime ist", während das iFay-Profil beschreibt „was für eine Entität diese iFay ist" — es umfasst die Persönlichkeitsmerkmale des Prime, aber auch iFays eigene unabhängige Attribute wie Skills, Hardware und Berechtigungen.
 
-Das Human-Prime-Profil wird vom Modul [Ausgerichtetes Bewusstsein](./11.3-Ausgerichtetes-Bewusstsein) gepflegt. Die Skills-Dimension wird von [Registrierte Skills](./12.2-Registrierte-Skills) verwaltet, die Hardware-Dimension vom [Gerätetreiber-Hub](./12.1-Gerätetreiber-Hub) und die Berechtigungsdimension von der [Anmeldeinformationen-Verwaltung](./8.1-Anmeldeinformationen-Verwaltung).
+Das Human-Prime-Profil wird vom Modul [Ausgerichtetes Bewusstsein](./11-Kognitionsschicht-Denken#113-ausgerichtetes-bewusstsein) gepflegt. Die Skills-Dimension wird von [Registrierte Skills](./12-Kognitionsschicht-Skills#122-registrierte-skills) verwaltet, die Hardware-Dimension vom [Gerätetreiber-Hub](./12-Kognitionsschicht-Skills#121-gerätetreiber-hub) und die Berechtigungsdimension von der [Anmeldeinformationen-Verwaltung](./08-Soziale-Schicht#82-soziale-berechtigungen).
 
 ---
 

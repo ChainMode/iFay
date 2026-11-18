@@ -4,7 +4,7 @@ Le Profil iFay est la « carte d'identité » complète d'iFay — un tableau d'
 
 Le profil du Human Prime (Conscience alignée) est un sous-ensemble et une source d'entrée du Profil iFay. Le profil du Human Prime décrit « quel type de personne est le Human Prime », tandis que le Profil iFay décrit « quel type d'entité est cet iFay » — il inclut les traits de personnalité du Prime, mais aussi les attributs indépendants propres à iFay tels que les compétences, le matériel et les permissions.
 
-Le profil du Human Prime est maintenu par le module [Conscience alignée](./11.3-Conscience-alignée). La dimension des compétences est gérée par les [Compétences enregistrées](./12.2-Compétences-enregistrées), la dimension matérielle par le [Hub pilotes périphériques](./12.1-Hub-pilotes-périphériques), et la dimension des permissions par la [Gestion des identifiants](./8.1-Gestion-des-identifiants).
+Le profil du Human Prime est maintenu par le module [Conscience alignée](./11-Couche-Cognition-Pensée#113-conscience-alignée). La dimension des compétences est gérée par les [Compétences enregistrées](./12-Couche-Cognition-Compétences#122-compétences-enregistrées), la dimension matérielle par le [Hub pilotes périphériques](./12-Couche-Cognition-Compétences#121-hub-pilotes-périphériques), et la dimension des permissions par la [Gestion des identifiants](./08-Couche-Sociale#82-permissions-sociales).
 
 ---
 

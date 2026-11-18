@@ -99,7 +99,7 @@ iFay unterstützt die Verwaltung von sieben Anmeldeinformationstypen: FayID, Kon
 
 ### Verwandte Dokumente
 
-- [Ausgerichtetes Bewusstsein](./11.3-Ausgerichtetes-Bewusstsein) — Ausgerichtetes Bewusstsein
-- [Persönlicher Datenspeicher](./11.1-Persönlicher-Datenspeicher) — Persönlicher Datenspeicher
-- [Anmeldeinformationen-Verwaltung](./8.1-Anmeldeinformationen-Verwaltung) — Anmeldeinformationen-Verwaltung
+- [Ausgerichtetes Bewusstsein](./11-Kognitionsschicht-Denken#113-ausgerichtetes-bewusstsein) — Ausgerichtetes Bewusstsein
+- [Persönlicher Datenspeicher](./11-Kognitionsschicht-Denken#111-persönlicher-datenspeicher) — Persönlicher Datenspeicher
+- [Anmeldeinformationen-Verwaltung](./08-Soziale-Schicht#82-soziale-berechtigungen) — Anmeldeinformationen-Verwaltung
 - [iFay-Profil](./07-iFay-Profil) — iFay-Profil

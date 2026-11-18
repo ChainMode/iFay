@@ -99,7 +99,7 @@ iFay soporta la gestión de siete tipos de credenciales: FayID, contraseñas de 
 
 ### Documentos relacionados
 
-- [Conciencia alineada](./11.3-Conciencia-alineada) — Conciencia alineada
-- [Montón de datos personales](./11.1-Montón-de-datos-personales) — Montón de datos personales
-- [Gestión de Credenciales](./8.1-Gestión-de-credenciales) — Gestión de Credenciales
+- [Conciencia alineada](./11-Capa-Cognición-Pensamiento#113-conciencia-alineada) — Conciencia alineada
+- [Montón de datos personales](./11-Capa-Cognición-Pensamiento#111-montón-de-datos-personales) — Montón de datos personales
+- [Gestión de Credenciales](./08-Capa-Social#82-permisos-sociales) — Gestión de Credenciales
 - [Perfil iFay](./07-Perfil-iFay) — Perfil iFay

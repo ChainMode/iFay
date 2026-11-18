@@ -99,7 +99,7 @@ Après que le Tuteur prend en charge, il peut choisir de continuer à interagir 
 ### Documents associés
 
 - [Profil iFay](./07-Profil-iFay) — Enregistrements des relations de tutelle
-- [Gestion des identifiants](./8.1-Gestion-des-identifiants) — Révocation d'identifiants
+- [Gestion des identifiants](./08-Couche-Sociale#82-permissions-sociales) — Révocation d'identifiants
 
 ---
 

@@ -202,9 +202,9 @@ Pour cela, nous avons besoin d'au moins 3 modules fondamentaux :
 
 ### Action
 Considérez cette couche comme le système moteur d'iFay — ses mains, ses pieds, sa bouche, etc. À travers elle, iFay peut contrôler le matériel et les logiciels. Elle contient au moins trois modules :
-- _**[Opération simulée](./10.1-Opération-simulée.md)**_ : Simule les opérations de l'humain, garantissant qu'iFay peut opérer les interfaces traditionnelles comme un humain quand nécessaire.
-- _**[Invocation de compétences](./10.2-Invocation-de-compétences.md)**_ : Déclenche directement des compétences spécifiques ou exécute des tâches, similaire aux appels de fonctions ou appels API.
-- _**[Comportement autonome](./10.3-Comportement-autonome.md)**_ : Représente les actions sans outil, comme courir ou faire des pompes — analogue aux tâches planifiées ou opérations déclenchées par le temps dans la conception de systèmes.
+- _**[Opération simulée](./10-Couche-Interaction-Action#101-opération-simulée)**_ : Simule les opérations de l'humain, garantissant qu'iFay peut opérer les interfaces traditionnelles comme un humain quand nécessaire.
+- _**[Invocation de compétences](./10-Couche-Interaction-Action#102-invocation-de-compétences)**_ : Déclenche directement des compétences spécifiques ou exécute des tâches, similaire aux appels de fonctions ou appels API.
+- _**[Comportement autonome](./10-Couche-Interaction-Action#103-comportement-autonome)**_ : Représente les actions sans outil, comme courir ou faire des pompes — analogue aux tâches planifiées ou opérations déclenchées par le temps dans la conception de systèmes.
 
 > 🎯 Scénario : Vous demandez à iFay de remplir un formulaire sur un ancien site gouvernemental. Ce site n'a pas d'API, pas d'intégration iFay — pas de problème. Le module d'Opération simulée permet à iFay de cliquer, taper et soumettre comme un humain, explorant de manière adaptative l'interface grâce au retour visuel du Traceur première personne. Pas de scripts nécessaires, pas de modifications du site requises.
 
@@ -214,14 +214,14 @@ Considérez cette couche comme le système moteur d'iFay — ses mains, ses pied
 Cette couche définit ce qu'iFay comprend, se souvient, sait et peut faire.
 
 ### Pensée
-Cette couche représente les capacités cognitives d'iFay. Elle contient les données du Human Prime et les données personnelles d'iFay comme mémoire persistante à long terme. Ses modules fondamentaux incluent le [Tas de données personnelles](./11.1-Tas-de-données-personnelles.md), les [Connaissances externes](./11.2-Connaissances-externes.md) et la [Conscience alignée](./11.3-Conscience-alignée.md).
+Cette couche représente les capacités cognitives d'iFay. Elle contient les données du Human Prime et les données personnelles d'iFay comme mémoire persistante à long terme. Ses modules fondamentaux incluent le [Tas de données personnelles](./11-Couche-Cognition-Pensée#111-tas-de-données-personnelles), les [Connaissances externes](./11-Couche-Cognition-Pensée#112-connaissances-externes) et la [Conscience alignée](./11-Couche-Cognition-Pensée#113-conscience-alignée).
 
 Elle inclut aussi des sources de connaissances externes — considérez-les comme des informations qu'une personne devrait connaître mais a oubliées ou n'a jamais complètement apprises. iFay fournit des mécanismes pour récupérer et intégrer ces connaissances.
 
 > 🎯 Scénario : Vous avez visité Kyoto il y a trois ans, pris beaucoup de photos et écrit quelques notes. Maintenant un ami vous demande de recommander des restaurants à Kyoto, mais vous ne vous souvenez plus. Votre iFay se souvient — elle trouve vos photos, avis et données de localisation de l'époque dans le Tas de données personnelles, et prend même en compte vos préférences gustatives actuelles pour donner des recommandations mises à jour.
 
 ### Compétences
-Représente les capacités, l'expertise et les permissions. Ses modules fondamentaux incluent le [Hub pilotes périphériques](./12.1-Hub-pilotes-périphériques.md), les [Compétences enregistrées](./12.2-Compétences-enregistrées.md) et les [Compétences internes](./12.3-Compétences-internes.md).
+Représente les capacités, l'expertise et les permissions. Ses modules fondamentaux incluent le [Hub pilotes périphériques](./12-Couche-Cognition-Compétences#121-hub-pilotes-périphériques), les [Compétences enregistrées](./12-Couche-Cognition-Compétences#122-compétences-enregistrées) et les [Compétences internes](./12-Couche-Cognition-Compétences#123-compétences-internes).
 
 Une distinction importante :
 - Compétence = ce qu'iFay *peut* faire

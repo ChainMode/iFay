@@ -4,7 +4,7 @@ El Perfil iFay es la "tarjeta de identidad" completa de iFay — una tabla de at
 
 El perfil del Human Prime (Conciencia alineada) es un subconjunto y fuente de entrada del Perfil iFay. El perfil del Human Prime describe "qué tipo de persona es el Human Prime", mientras que el Perfil iFay describe "qué tipo de entidad es este iFay" — incluye los rasgos de personalidad del Prime, pero también los atributos independientes propios de iFay como habilidades, hardware y permisos.
 
-El perfil del Human Prime es mantenido por el módulo de [Conciencia alineada](./11.3-Conciencia-alineada). La dimensión de habilidades es gestionada por [Habilidades registradas](./12.2-Habilidades-registradas), la dimensión de hardware por [Hub de controladores](./12.1-Hub-de-controladores) y la dimensión de permisos por [Gestión de Credenciales](./8.1-Gestión-de-credenciales).
+El perfil del Human Prime es mantenido por el módulo de [Conciencia alineada](./11-Capa-Cognición-Pensamiento#113-conciencia-alineada). La dimensión de habilidades es gestionada por [Habilidades registradas](./12-Capa-Cognición-Habilidades#122-habilidades-registradas), la dimensión de hardware por [Hub de controladores](./12-Capa-Cognición-Habilidades#121-hub-de-controladores) y la dimensión de permisos por [Gestión de Credenciales](./08-Capa-Social#82-permisos-sociales).
 
 ---
 

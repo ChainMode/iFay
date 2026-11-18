@@ -99,7 +99,7 @@ iFay supporte la gestion de sept types d'identifiants : FayID, comptes/mots de p
 
 ### Documents associés
 
-- [Conscience alignée](./11.3-Conscience-alignée) — Conscience alignée
-- [Tas de données personnelles](./11.1-Tas-de-données-personnelles) — Tas de données personnelles
-- [Gestion des identifiants](./8.1-Gestion-des-identifiants) — Gestion des identifiants
+- [Conscience alignée](./11-Couche-Cognition-Pensée#113-conscience-alignée) — Conscience alignée
+- [Tas de données personnelles](./11-Couche-Cognition-Pensée#111-tas-de-données-personnelles) — Tas de données personnelles
+- [Gestion des identifiants](./08-Couche-Sociale#82-permissions-sociales) — Gestion des identifiants
 - [Profil iFay](./07-Profil-iFay) — Profil iFay
