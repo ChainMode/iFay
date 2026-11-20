@@ -1,10 +1,11 @@
 # Publishing `@ifay/*` Workspace Packages
 
-This umbrella repository manages three public npm packages under `packages/`:
+This umbrella repository manages four public npm packages under `packages/`:
 
 | Package | Path | CLI Binary | Runtime Dependencies |
 |---------|------|------------|----------------------|
 | [`@ifay/sdk`](./packages/ifay-sdk/README.md) | `packages/ifay-sdk` | `ifay-demo` | Zero external dependencies (`node:*` built-ins only) |
+| [`@ifay/soul`](./packages/ifay-soul/README.md) | `packages/ifay-soul` | `ifay-soul` | `@ifay/sdk` + `node:*` built-ins |
 | [`@ifay/ifacts`](./packages/ifacts-harness/README.md) | `packages/ifacts-harness` | `ifacts` | Zero external dependencies (`node:*` built-ins only) |
 | [`@ifay/mcp-server`](./packages/mcp-server/README.md) | `packages/mcp-server` | `ifay-mcp-server` | `@ifay/sdk` + `node:*` built-ins |
 
@@ -34,7 +35,7 @@ npm run ifacts:self-test
 
 ## 3. Inspect Package Tarballs (`--dry-run`)
 
-Before publishing, verify exact tarball contents and `files` allowlists across all three workspace packages:
+Before publishing, verify exact tarball contents and `files` allowlists across all four workspace packages:
 
 ```bash
 npm pack --dry-run --workspaces
@@ -42,6 +43,7 @@ npm pack --dry-run --workspaces
 
 Confirm that:
 - `@ifay/sdk` includes `src/`, `dist/cli.js`, `dist/faymanifest.schema.json`, `README.md`, and `package.json`.
+- `@ifay/soul` includes `src/`, `bin/ifay-soul.mjs`, `README.md`, and `package.json`.
 - `@ifay/ifacts` includes `src/`, `bin/ifacts.mjs`, `README.md`, and `package.json`.
 - `@ifay/mcp-server` includes `dist/index.js`, `dist/index.d.ts`, `dist/cli.js`, `server.json`, `README.md`, and `package.json`.
 - No internal governance or test files are bundled into the tarballs.

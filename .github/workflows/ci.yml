@@ -28,11 +28,11 @@ jobs:
       - name: Build workspace packages
         run: npm run build
 
-      - name: Run SDK, iFACTS, MCP server & schema fixture tests
+      - name: Run SDK, Soul, iFACTS, MCP server & schema fixture tests
         run: npm test
 
-      - name: Run interactive cryptographic walkthrough (ifay-demo)
-        run: npm run demo
+      - name: Run interactive cryptographic walkthrough (ifay-demo & soul:demo)
+        run: npm run demo && npm run soul:demo
 
       - name: Verify npm pack dry-run across all workspaces
         run: npm pack --dry-run --workspaces

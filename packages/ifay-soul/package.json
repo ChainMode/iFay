@@ -1,0 +1,57 @@
+{
+  "name": "@ifay/soul",
+  "version": "0.1.0",
+  "description": "Portable iFay Digital Soul & coFay seat packager, Ed25519 hash-chained Primary Body peer sync ledger, adaptive DeviceRuntimeProfile embodiment slicer, and FayGer-compatible BUF v1 binary codec",
+  "type": "module",
+  "main": "./src/index.mjs",
+  "types": "./src/index.d.ts",
+  "bin": {
+    "ifay-soul": "./bin/ifay-soul.mjs"
+  },
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.mjs"
+    },
+    "./buf": "./src/buf-codec.mjs"
+  },
+  "files": [
+    "src/",
+    "bin/",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "demo": "node bin/ifay-soul.mjs demo"
+  },
+  "dependencies": {
+    "@ifay/sdk": "^0.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChainMode/iFay.git",
+    "directory": "packages/ifay-soul"
+  },
+  "homepage": "https://ifay.ai",
+  "bugs": {
+    "url": "https://github.com/ChainMode/iFay/issues"
+  },
+  "keywords": [
+    "ifay",
+    "cofay",
+    "fayger",
+    "buf",
+    "digital-soul",
+    "cbor",
+    "ed25519",
+    "peer-sync",
+    "ego"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "license": "MIT"
+}

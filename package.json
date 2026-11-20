@@ -2,7 +2,7 @@
   "name": "ifay-umbrella-workspace",
   "version": "0.1.0",
   "private": true,
-  "description": "iFay umbrella specification, authoritative FayManifest schema, official @ifay/sdk, @ifay/ifacts conformance harness, and @ifay/mcp-server",
+  "description": "iFay umbrella specification, authoritative FayManifest schema, official @ifay/sdk, @ifay/soul, @ifay/ifacts conformance harness, and @ifay/mcp-server",
   "type": "module",
   "repository": {
     "type": "git",
@@ -14,6 +14,7 @@
   },
   "workspaces": [
     "packages/ifay-sdk",
+    "packages/ifay-soul",
     "packages/ifacts-harness",
     "packages/mcp-server"
   ],
@@ -21,7 +22,8 @@
     "build": "npm run build --workspace=@ifay/sdk && npm run build --workspace=@ifay/mcp-server",
     "prepare": "npm run build",
     "demo": "node packages/ifay-sdk/dist/cli.js",
-    "test": "npm run build && node --test packages/ifay-sdk/tests/*.test.mjs packages/ifacts-harness/tests/*.test.mjs packages/mcp-server/test/*.test.js && node schema/faymanifest/generator/validate-fixtures.mjs",
+    "soul:demo": "node packages/ifay-soul/bin/ifay-soul.mjs demo",
+    "test": "npm run build && node --test packages/ifay-sdk/tests/*.test.mjs packages/ifay-soul/tests/*.test.mjs packages/ifacts-harness/tests/*.test.mjs packages/mcp-server/test/*.test.js && node schema/faymanifest/generator/validate-fixtures.mjs",
     "ifacts:self-test": "node packages/ifacts-harness/bin/ifacts.mjs --self-test"
   },
   "devDependencies": {

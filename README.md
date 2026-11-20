@@ -47,6 +47,23 @@ git clone https://github.com/ChainMode/iFay.git && cd iFay && npm install && npm
 
 ---
 
+## Digital Soul Packaging, Peer Sync & FayGer `.buf` Slicing (`@ifay/soul`)
+
+An **iFay** runs inside **FayGer** as a portable **Digital Soul** (`Primary Body` + adaptive terminal `.buf` embodiment slices). Use [`packages/ifay-soul`](./packages/ifay-soul/README.md) (`ifay-soul`) to initialize a 6-dimension `iFay Profile` (stealth by default with opt-in platform registration and a single-active-`Ego` persona invariant), synchronize peer Primary Body replicas over an Ed25519-signed SHA-256 causal ledger, build `coFay` `RoleCharter 1.0` seats, and slice byte-exact `BUF\0` v1 binaries for workstation (`super`/`plus`), edge/drone (`lite`/`normal`), or `remote_only` (`thin`) `DeviceRuntimeProfile` targets:
+
+```bash
+# Run the full Primary Body peer-sync, 3-tier .buf slicing & coFay transfer walkthrough
+npm run soul:demo
+
+# Create a Digital Soul, sync a peer replica, and slice a FayGer-compatible .buf binary
+node packages/ifay-soul/bin/ifay-soul.mjs init ./my-soul
+node packages/ifay-soul/bin/ifay-soul.mjs sync ./my-soul ./my-soul-peer
+node packages/ifay-soul/bin/ifay-soul.mjs slice ./my-soul --tier lite --out ./dist/my-ifay-lite.buf
+node packages/ifay-soul/bin/ifay-soul.mjs inspect-buf ./dist/my-ifay-lite.buf
+```
+
+---
+
 ## MCP Server Quickstart (`@ifay/mcp-server`)
 
 Connect Claude Desktop, Cursor, Windsurf, or any Model Context Protocol (`2024-11-05` / `2025-03-26`) client application directly to [`packages/mcp-server`](./packages/mcp-server/README.md) over `stdio`:
@@ -73,18 +90,22 @@ Connect Claude Desktop, Cursor, Windsurf, or any Model Context Protocol (`2024-1
 
 ## Workspace Packages & Schemas
 
-This umbrella repository hosts the authoritative `FayManifest` schema alongside three publish-ready npm workspace packages (see [`PUBLISHING.md`](./PUBLISHING.md)):
+This umbrella repository hosts the authoritative `FayManifest` schema alongside four publish-ready npm workspace packages (see [`PUBLISHING.md`](./PUBLISHING.md)):
 
 | Package / Directory | Description |
 |---------------------|-------------|
 | [`packages/ifay-sdk`](./packages/ifay-sdk/README.md) (`@ifay/sdk`) | Zero-dependency SDK + `ifay-demo` CLI for `FayID` (RFC 4648 lowercase no-pad Base32 + HKDF-SHA256 subkeys + Ed25519 Holder-of-Key + RFC 8785 JCS), `Faying 1.0` Mandate envelopes, `FayManifest` builder/validator, `CAP 1.0` `D-1..D-7` safety gate, `SSP 1.0` Detached Ed25519 JWS `SkillProof`, `DTP 1.0` AES-256-GCM frames, and `Ego` two-tier Vault verification |
+| [`packages/ifay-soul`](./packages/ifay-soul/README.md) (`@ifay/soul`) | Portable `iFay` Digital Soul & `coFay` `RoleCharter 1.0` seat packager, Ed25519 SHA-256 causal Primary Body peer sync ledger (`syncPrimaryReplicas`), adaptive `DeviceRuntimeProfile` embodiment slicer (`sliceSoulForDevice`), and `FayGer`-compatible `BUF\0` v1 canonical CBOR binary codec + `ifay-soul` CLI |
 | [`packages/ifacts-harness`](./packages/ifacts-harness/README.md) (`@ifay/ifacts`) | Runnable **iFACTS** conformance suite enforcing the progressive `L1 → L2 → L3` gate (`blocked_by_previous_level`), explicit `coFay` / `coFACTS` scope separation, SHA-256 hash-chained E2E lifecycle verification, `iFay Ready` (`None` / `Bronze` / `Silver` / `Gold`) certification, and `ifacts-report/1.0` output |
 | [`packages/mcp-server`](./packages/mcp-server/README.md) (`@ifay/mcp-server`) | Zero-dependency Model Context Protocol stdio server exposing `fayid_validate`, `faymanifest_validate`, `cap_evaluate`, and `ssp_verify_descriptor` |
 | [`schema/faymanifest`](./schema/faymanifest/) | Authoritative JSON Schema ([`faymanifest.schema.json`](./schema/faymanifest/faymanifest.schema.json)) and validated reference fixtures for declarative iFay assembly |
 
 ```bash
-# Run all workspace unit/integration tests (@ifay/sdk + @ifay/ifacts + @ifay/mcp-server + fixtures)
+# Run all workspace unit/integration tests (@ifay/sdk + @ifay/soul + @ifay/ifacts + @ifay/mcp-server + fixtures)
 npm test
+
+# Run the Digital Soul peer-sync & adaptive BuF slicing walkthrough
+npm run soul:demo
 
 # Run the progressive L1 -> L2 -> L3 iFACTS conformance self-test
 npm run ifacts:self-test
@@ -98,7 +119,7 @@ The iFay System is organized as 13 focused public repositories under [`github.co
 
 | Repository | Role | Current Maturity Stage | Stack & Verified Tests |
 |------------|------|------------------------|------------------------|
-| [`ChainMode/iFay`](https://github.com/ChainMode/iFay) | Umbrella Blueprint, `FayManifest`, `@ifay/sdk`, `@ifay/ifacts`, `@ifay/mcp-server` | Spec + Tested Reference SDK, Conformance Suite & MCP Server | Node.js / TS ESM · `51` tests + `2` schema fixtures |
+| [`ChainMode/iFay`](https://github.com/ChainMode/iFay) | Umbrella Blueprint, `FayManifest`, `@ifay/sdk`, `@ifay/soul`, `@ifay/ifacts`, `@ifay/mcp-server` | Spec + Tested Reference SDK, Soul Packager, Conformance Suite & MCP Server | Node.js / TS ESM · `60` tests + `2` schema fixtures |
 | [`ChainMode/FayID`](https://github.com/ChainMode/FayID) | Self-Sovereign Cryptographic Identity (`hid_` / `ifay_` / `cofay_` / `org_`) | Frozen `1.0` Spec + Tested Reference Toolkit | Node.js ESM · `21` unit tests + `27` vectors |
 | [`ChainMode/Faying-Protocol`](https://github.com/ChainMode/Faying-Protocol) | Human Prime ↔ Fay Delegation Handshake & `G0`–`G4` Mandates | Frozen `1.0` + `1.1-cofay` Spec + Reference Validators | TS / Rust / Python · `28+` tests + `10+` vectors |
 | [`ChainMode/FayGer`](https://github.com/ChainMode/FayGer) | Modular Virtual Runtime, `FayManifest` Assembler & CAP Gate (`0.3.0-rc.1`) | Spec + Tested Multi-Crate Runtime & Black-Box Suite | Rust (10+ crates) · `631` tests |
