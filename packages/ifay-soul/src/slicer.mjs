@@ -79,10 +79,33 @@ export const OFFICIAL_DEVICE_PROFILES = Object.freeze({
   },
 });
 
+const FAYGER_TIER_ALIASES = Object.freeze({
+  'server-high': 'super',
+  'workstation-super': 'super',
+  'desktop-full': 'plus',
+  'desktop-standard': 'plus',
+  'laptop-plus': 'plus',
+  'mobile-standard': 'normal',
+  'tablet-normal': 'normal',
+  'edge-lite': 'lite',
+  'embedded-lite': 'lite',
+  'drone-lite': 'lite',
+  'iot-thin': 'thin',
+  'watch-thin': 'thin',
+  'remote-thin': 'thin',
+});
+
 export function normalizeDeviceRuntimeProfile(input = {}) {
-  const tierHint = input.tier ?? inferTierFromResources(input);
+  let rawTier = input.tier ?? inferTierFromResources(input);
+  if (typeof rawTier === 'string' && FAYGER_TIER_ALIASES[rawTier]) {
+    rawTier =
+      rawTier === 'desktop-full' && Number.isFinite(input.memory_mb) && input.memory_mb >= 24576
+        ? 'super'
+        : FAYGER_TIER_ALIASES[rawTier];
+  }
+  const tierHint = rawTier;
   if (!DEVICE_TIERS.includes(tierHint)) {
-    throw new Error(`Invalid DeviceRuntimeProfile tier '${String(tierHint)}'`);
+    throw new Error(`Invalid DeviceRuntimeProfile tier '${String(input.tier ?? tierHint)}'`);
   }
   const preset = OFFICIAL_DEVICE_PROFILES[tierHint];
   const memoryMb = Number.isFinite(input.memory_mb) ? input.memory_mb : preset.memory_mb;
@@ -91,15 +114,25 @@ export function normalizeDeviceRuntimeProfile(input = {}) {
     : preset.free_storage_mb;
   const networkOnline =
     typeof input.network_online === 'boolean' ? input.network_online : preset.network_online;
+  const egoSlotObj =
+    input.ego_slot && typeof input.ego_slot === 'object' && !Array.isArray(input.ego_slot)
+      ? input.ego_slot
+      : null;
+  const egoSlotPersona =
+    typeof input.ego_slot === 'string'
+      ? input.ego_slot
+      : egoSlotObj?.persona_id ?? preset.ego_slot ?? null;
   const remoteOnly =
     input.remote_only === true ||
+    egoSlotObj?.remote_only === true ||
+    egoSlotObj?.max_slice_tier === 'remote-only' ||
     tierHint === 'thin' ||
     ((memoryMb < 128 || freeStorageMb < 16) && networkOnline);
 
   return {
     schema_version: input.schema_version ?? DEVICE_PROFILE_SCHEMA_VERSION,
-    device_id: String(input.device_id ?? preset.device_id),
-    platform_id: String(input.platform_id ?? preset.platform_id),
+    device_id: String(input.device_id ?? input.host_id ?? preset.device_id),
+    platform_id: String(input.platform_id ?? input.os ?? preset.platform_id),
     tier: remoteOnly ? 'thin' : tierHint,
     memory_mb: memoryMb,
     free_storage_mb: freeStorageMb,
@@ -111,7 +144,7 @@ export function normalizeDeviceRuntimeProfile(input = {}) {
     preferred_domains: Array.from(
       new Set(input.preferred_domains ?? preset.preferred_domains ?? []),
     ),
-    ego_slot: input.ego_slot ?? preset.ego_slot ?? null,
+    ego_slot: egoSlotPersona,
     primary_body_endpoint:
       input.primary_body_endpoint ?? preset.primary_body_endpoint ?? 'fay://primary-body/default',
   };
