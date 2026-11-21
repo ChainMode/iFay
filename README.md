@@ -31,7 +31,25 @@ flowchart LR
 
 ---
 
-## 60-Second Fresh-Clone Quickstart
+## Install FayGer Desktop & Server Engine (`v0.3.0`, Zero Toolchain Required)
+
+Download the prebuilt zero-dependency `fayger` single binary (`faygerd` daemon + `fayger` CLI + offline **FayGer Dashboard** Web Console) on **macOS** (Apple Silicon & Intel), **Linux** (x86_64 & ARM64), or **Windows** (x86_64), then create an `iFay`, configure External LLMs & `Ego`, grant Host OS permissions, and supervise live execution:
+
+```bash
+# macOS & Linux (verifies SHA-256 checksum automatically)
+curl -fsSL https://raw.githubusercontent.com/ChainMode/FayGer/main/scripts/install.sh | sh
+~/.fayger/bin/fayger up --open
+```
+
+```powershell
+# Windows PowerShell (verifies SHA-256 checksum automatically)
+irm https://raw.githubusercontent.com/ChainMode/FayGer/main/scripts/install.ps1 | iex
+fayger up --open
+```
+
+---
+
+## 60-Second Developer SDK Quickstart
 
 Requires **Node.js `>= 20.0.0`** and **npm**. Runs completely offline after install with zero external services, databases, or API keys:
 
@@ -122,7 +140,7 @@ The iFay System is organized as 13 focused public repositories under [`github.co
 | [`ChainMode/iFay`](https://github.com/ChainMode/iFay) | Umbrella Blueprint, `FayManifest`, `@ifay/sdk`, `@ifay/soul`, `@ifay/ifacts`, `@ifay/mcp-server` | Spec + Tested Reference SDK, Soul Packager, Conformance Suite & MCP Server | Node.js / TS ESM · `60` tests + `2` schema fixtures |
 | [`ChainMode/FayID`](https://github.com/ChainMode/FayID) | Self-Sovereign Cryptographic Identity (`hid_` / `ifay_` / `cofay_` / `org_`) | Frozen `1.0` Spec + Tested Reference Toolkit | Node.js ESM · `21` unit tests + `27` vectors |
 | [`ChainMode/Faying-Protocol`](https://github.com/ChainMode/Faying-Protocol) | Human Prime ↔ Fay Delegation Handshake & `G0`–`G4` Mandates | Frozen `1.0` + `1.1-cofay` Spec + Reference Validators | TS / Rust / Python · `28+` tests + `10+` vectors |
-| [`ChainMode/FayGer`](https://github.com/ChainMode/FayGer) | Modular Virtual Runtime, `FayManifest` Assembler & CAP Gate (`0.3.0-rc.1`) | Spec + Tested Multi-Crate Runtime & Black-Box Suite | Rust (10+ crates) · `631` tests |
+| [`ChainMode/FayGer`](https://github.com/ChainMode/FayGer) | Three-in-One Desktop/Server Runtime (`faygerd` + CLI + Dashboard), Brain Config & OS Drivers (`v0.3.0`) | Prebuilt 5-Target Release Binaries, One-Line Installer & Tested Runtime | Rust (11 crates) · `655` tests |
 | [`ChainMode/Ego`](https://github.com/ChainMode/Ego) | Local Personal Model Pod, Multi-Edition LoRA Dojo & Signed Vault (`v0.2.0`) | Spec + Tested Local Training & Packaging Pipeline | Python / MLX / PEFT · `750` pytest tests |
 | [`ChainMode/Control-Authority-Protocol`](https://github.com/ChainMode/Control-Authority-Protocol) | Hardware & Host Actuation Safety Gate (`CAP 1.0`, `D-1..D-7`) | Frozen `1.0` Spec + Dual Reference Engines | TypeScript & Rust · `81` TS tests + `14` vectors |
 | [`ChainMode/Data-Tunnel-Protocol`](https://github.com/ChainMode/Data-Tunnel-Protocol) | Encrypted Host-to-Fay Telemetry & Data Framing (`DTP 1.0`) | Frozen `1.0` Spec + Dual Reference Codecs | TypeScript & Rust · `310` TS + `9` Rust tests |
