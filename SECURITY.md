@@ -2,14 +2,17 @@
 
 ## Supported Versions
 
-Security fixes and advisories are actively maintained for the current `main` branch and published baseline packages in this umbrella repository:
+Security fixes and advisories are actively maintained for `main` and the current GitHub Release baseline (`v0.3.0`) in this umbrella repository (packages are distributed from source / GitHub Releases today; public npm registry publication is tracked in [`PUBLISHING.md`](./PUBLISHING.md)):
 
 | Component / Artifact | Version / Branch | Supported |
 | --- | --- | --- |
-| `@ifay/sdk` (`packages/ifay-sdk`) | `main` / `0.1.x` | Yes |
-| `@ifay/ifacts` (`packages/ifacts-harness`) | `main` / `0.1.x` | Yes |
+| Umbrella Release Baseline (`ChainMode/iFay`) | `main` / `v0.3.0` | Yes |
+| `@ifay/sdk` (`packages/ifay-sdk`, workspace pkg `0.1.0`) | `main` / `v0.3.0` | Yes |
+| `@ifay/soul` (`packages/ifay-soul`, workspace pkg `0.1.0`) | `main` / `v0.3.0` | Yes |
+| `@ifay/ifacts` (`packages/ifacts-harness`, workspace pkg `0.1.0`) | `main` / `v0.3.0` | Yes |
+| `@ifay/mcp-server` (`packages/mcp-server`, workspace pkg `0.1.0`) | `main` / `v0.3.0` | Yes |
 | `FayManifest` Schema (`schema/faymanifest/`) | `main` / `1.0` | Yes |
-| Pre-baseline snapshots | `< 0.1.0` | No |
+| Pre-baseline snapshots | `< v0.1.0` | No |
 
 ## Security Scope
 

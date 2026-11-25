@@ -14,6 +14,7 @@
 # And not these essential root files
 !.gitignore
 !README.md
+!COMPATIBILITY.md
 !PUBLISHING.md
 !LICENSE
 !LICENSE-DOCS

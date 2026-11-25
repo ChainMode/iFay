@@ -31,19 +31,21 @@ flowchart LR
 
 ---
 
-## Install FayGer Desktop & Server Engine (`v0.3.0`, Zero Toolchain Required)
+## Install FayGer Desktop & Server Engine (`v0.3.1`, Zero Toolchain Required)
 
-Download the prebuilt zero-dependency `fayger` single binary (`faygerd` daemon + `fayger` CLI + offline **FayGer Dashboard** Web Console) on **macOS** (Apple Silicon & Intel), **Linux** (x86_64 & ARM64), or **Windows** (x86_64), then create an `iFay`, configure External LLMs & `Ego`, grant Host OS permissions, and supervise live execution:
+Download the prebuilt zero-dependency `fayger` single binary (`faygerd` daemon + `fayger` CLI + offline **FayGer Dashboard** Web Console + `FHBP/1.0` Hardware Embodiment Hub) on **macOS** (Apple Silicon & Intel, plus `.dmg`), **Linux** (x86_64 & ARM64), or **Windows** (x86_64), then run `fayger doctor` to verify cold-start gates (and emit a zero-PII verification receipt), create an `iFay`, configure External LLMs & `Ego`, grant Host OS permissions, and supervise live execution:
 
 ```bash
 # macOS & Linux (verifies SHA-256 checksum automatically)
 curl -fsSL https://raw.githubusercontent.com/ChainMode/FayGer/main/scripts/install.sh | sh
+~/.fayger/bin/fayger doctor
 ~/.fayger/bin/fayger up --open
 ```
 
 ```powershell
 # Windows PowerShell (verifies SHA-256 checksum automatically)
 irm https://raw.githubusercontent.com/ChainMode/FayGer/main/scripts/install.ps1 | iex
+fayger doctor
 fayger up --open
 ```
 
@@ -133,23 +135,23 @@ npm run ifacts:self-test
 
 ## 13-Repository Ecosystem Status
 
-The iFay System is organized as 13 focused public repositories under [`github.com/ChainMode`](https://github.com/ChainMode) (with full 9-locale documentation published at [ifay.ai](https://ifay.ai) and [Meritora](https://meritora-site.vercel.app)). Below is the current, unvarnished engineering maturity of every repository:
+The iFay System is organized as 13 focused public repositories under [`github.com/ChainMode`](https://github.com/ChainMode) (with full 9-locale documentation published at [ifay.ai](https://ifay.ai) and [Meritora](https://meritora-site.vercel.app)). For the authoritative cross-repository version, distribution, and real-vs-preview boundary matrix, see [`COMPATIBILITY.md`](./COMPATIBILITY.md). Below is the current, unvarnished engineering maturity of every repository:
 
 | Repository | Role | Current Maturity Stage | Stack & Verified Tests |
 |------------|------|------------------------|------------------------|
-| [`ChainMode/iFay`](https://github.com/ChainMode/iFay) | Umbrella Blueprint, `FayManifest`, `@ifay/sdk`, `@ifay/soul`, `@ifay/ifacts`, `@ifay/mcp-server` | Spec + Tested Reference SDK, Soul Packager, Conformance Suite & MCP Server | Node.js / TS ESM · `60` tests + `2` schema fixtures |
-| [`ChainMode/FayID`](https://github.com/ChainMode/FayID) | Self-Sovereign Cryptographic Identity (`hid_` / `ifay_` / `cofay_` / `org_`) | Frozen `1.0` Spec + Tested Reference Toolkit | Node.js ESM · `21` unit tests + `27` vectors |
-| [`ChainMode/Faying-Protocol`](https://github.com/ChainMode/Faying-Protocol) | Human Prime ↔ Fay Delegation Handshake & `G0`–`G4` Mandates | Frozen `1.0` + `1.1-cofay` Spec + Reference Validators | TS / Rust / Python · `28+` tests + `10+` vectors |
-| [`ChainMode/FayGer`](https://github.com/ChainMode/FayGer) | Three-in-One Desktop/Server Runtime (`faygerd` + CLI + Dashboard), Brain Config & OS Drivers (`v0.3.0`) | Prebuilt 5-Target Release Binaries, One-Line Installer & Tested Runtime | Rust (11 crates) · `655` tests |
-| [`ChainMode/Ego`](https://github.com/ChainMode/Ego) | Local Personal Model Pod, Multi-Edition LoRA Dojo & Signed Vault (`v0.2.0`) | Spec + Tested Local Training & Packaging Pipeline | Python / MLX / PEFT · `750` pytest tests |
-| [`ChainMode/Control-Authority-Protocol`](https://github.com/ChainMode/Control-Authority-Protocol) | Hardware & Host Actuation Safety Gate (`CAP 1.0`, `D-1..D-7`) | Frozen `1.0` Spec + Dual Reference Engines | TypeScript & Rust · `81` TS tests + `14` vectors |
-| [`ChainMode/Data-Tunnel-Protocol`](https://github.com/ChainMode/Data-Tunnel-Protocol) | Encrypted Host-to-Fay Telemetry & Data Framing (`DTP 1.0`) | Frozen `1.0` Spec + Dual Reference Codecs | TypeScript & Rust · `310` TS + `9` Rust tests |
-| [`ChainMode/Skill-Sharing-Protocol`](https://github.com/ChainMode/Skill-Sharing-Protocol) | Signed Skill Discovery & Detached Ed25519 JWS Proofs (`SSP 1.0`) | Frozen `1.0` Spec + Tested Reference Server/Client | TypeScript · `93` unit + `11` property tests + `18` vectors |
-| [`ChainMode/Telepathy-Protocol`](https://github.com/ChainMode/Telepathy-Protocol) | Structured Shared-Context Negotiation & A2A/MCP Bridges (`TP 1.0`) | Frozen `1.0` Explicit-Schema MVP (Latent-vector track in research) | Node.js ESM · `48` tests + `21` vectors |
-| [`ChainMode/Interactive-Conversation-Protocol`](https://github.com/ChainMode/Interactive-Conversation-Protocol) | Multimodal `.ctx` Conversation Envelopes & Reaction Consent (`ICP 1.0`) | Frozen `1.0` Spec + Tested Reference Parser & Renderer | TypeScript · `62` tests + `20` vectors |
-| [`ChainMode/Global-Merit-Chain`](https://github.com/ChainMode/Global-Merit-Chain) | Non-Speculative Social Contribution Ledger & 2-Phase BFT Node | Spec + Local 4-Node BFT Devnet (`gmc-node`) & `Meritora Desktop` | Rust · `648` workspace tests (0 tx fee / 0 block reward) |
-| [`ChainMode/coFay`](https://github.com/ChainMode/coFay) | Public/Organizational Role Avatars, `RoleCharter 1.0` & `coFACTS` | 9-Locale Blueprint + Tested L1 Charter & Dual-Sig Validator | Node.js ESM · `9` test suites + `20` vectors |
-| [`ChainMode/MeriToken`](https://github.com/ChainMode/MeriToken) | Non-Monetary Social Contribution Unit (`μ` / Merit Unit) | 9-Locale Blueprint Charter (Accounting enforced in `Global-Merit-Chain`) | Specification & Governance Charter |
+| [`ChainMode/iFay`](https://github.com/ChainMode/iFay) | Umbrella Blueprint, `FayManifest`, `@ifay/sdk`, `@ifay/soul`, `@ifay/ifacts`, `@ifay/mcp-server` (`v0.3.0`) | Spec + Tested Reference SDK, Soul Packager, Conformance Suite & MCP Server | Node.js / TS ESM · `60` tests + `2` schema fixtures |
+| [`ChainMode/FayID`](https://github.com/ChainMode/FayID) | Self-Sovereign Cryptographic Identity (`hid_` / `ifay_` / `cofay_` / `org_`) (`v1.1.0`) | Frozen `1.0` Spec + Tested Reference Toolkit & `Auth Exchange` Proxy | Node.js ESM · `30` unit tests + `27` vectors |
+| [`ChainMode/Faying-Protocol`](https://github.com/ChainMode/Faying-Protocol) | Human Prime ↔ Fay Delegation Handshake & `G0`–`G4` Mandates (`v1.2.0`) | Frozen `1.0` + `1.1-cofay` Spec + `Rogue Fay` Guardian Middleware | TS / Rust / Python · `39+` tests + `10+` vectors |
+| [`ChainMode/FayGer`](https://github.com/ChainMode/FayGer) | Three-in-One Desktop/Server Runtime (`faygerd` + CLI + Dashboard), Brain Config, OS Drivers & `FHBP/1.0` Hub (`v0.3.1`) | Prebuilt 5-Target Binaries, macOS `.dmg`, Android `.apk`, C99 Firmware SDK & Tested Runtime | Rust (11 crates) + ISO C99 · `659+` tests |
+| [`ChainMode/Ego`](https://github.com/ChainMode/Ego) | Local Personal Model Pod, Multi-Edition LoRA Dojo, `Ego School` & Signed Vault (`v0.3.0`) | Spec + Tested Local Training, Loopback Service & Packaging Pipeline | Python / MLX / PEFT · `805` pytest tests |
+| [`ChainMode/Control-Authority-Protocol`](https://github.com/ChainMode/Control-Authority-Protocol) | Hardware & Host Actuation Safety Gate (`CAP 1.0`, `D-1..D-7`) (`v1.0.0`) | Frozen `1.0` Spec + Dual Reference Engines | TypeScript & Rust · `81` TS tests + `14` vectors |
+| [`ChainMode/Data-Tunnel-Protocol`](https://github.com/ChainMode/Data-Tunnel-Protocol) | Encrypted Host-to-Fay Telemetry & Minimal-Injection Collector (`DTP 1.0`, `v1.1.0`) | Frozen `1.0` Spec + Dual Reference Codecs & `dtp-collector` | TypeScript & Rust · `316` TS + `9` Rust tests |
+| [`ChainMode/Skill-Sharing-Protocol`](https://github.com/ChainMode/Skill-Sharing-Protocol) | Signed Skill Discovery & Detached Ed25519 JWS Proofs (`SSP 1.0`, `v1.1.0`) | Frozen `1.0` Spec + Tested `ssp-publisher` / `ssp-radar` | TypeScript · `97` unit/property tests + `18` vectors |
+| [`ChainMode/Telepathy-Protocol`](https://github.com/ChainMode/Telepathy-Protocol) | Structured Shared-Context Negotiation & A2A/MCP Bridges (`TP 1.0`, `v1.1.0`) | Frozen `1.0` Explicit-Schema MVP (Latent-vector track experimental) | Node.js ESM · `50` tests + `21` vectors |
+| [`ChainMode/Interactive-Conversation-Protocol`](https://github.com/ChainMode/Interactive-Conversation-Protocol) | Multimodal `.ctx` Conversation Envelopes & Adaptive Endpoints (`ICP 1.0`, `v1.1.0`) | Frozen `1.0` Spec + Tested Reference Parser & Multi-Device Renderer | TypeScript · `65` tests + `20` vectors |
+| [`ChainMode/Global-Merit-Chain`](https://github.com/ChainMode/Global-Merit-Chain) | Non-Speculative Social Contribution Ledger & 2-Phase BFT Node (`v0.3.0`) | Spec + Local 4-Node BFT Devnet (`gmc-node`), Priority Consumption & `Meritora` | Rust · `657` workspace tests (0 tx fee / 0 block reward) |
+| [`ChainMode/coFay`](https://github.com/ChainMode/coFay) | Public/Organizational Role Avatars, `RoleCharter 1.0` & `coFACTS` (`v1.1.0`) | 9-Locale Blueprint + Tested Role Wizard, Steward Transfer & `.buf` Packer | Node.js ESM · `15` tests + `20` vectors |
+| [`ChainMode/MeriToken`](https://github.com/ChainMode/MeriToken) | Non-Monetary Social Contribution Unit (`μ` / Merit Unit) (`v0.2.0`) | 9-Locale Blueprint Charter (Accounting enforced in `Global-Merit-Chain`) | Specification & Governance Charter |
 
 ---
 
